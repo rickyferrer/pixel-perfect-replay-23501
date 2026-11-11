@@ -49,9 +49,9 @@ const find = (name: string): Product => {
   if (parts) out.nameParts = parts;
   return out;
 };
-const g = (id: string, alt: string, names: string[]): ImageGroup => {
+const g = (id: string, alt: string, names: string[], image?: string): ImageGroup => {
   const items = names.map(find);
-  return { id, image: items[0]?.image || "/placeholder.svg", alt, products: items };
+  return { id, image: image || items[0]?.image || "/placeholder.svg", alt, products: items };
 };
 
 export const sections: Section[] = [
@@ -77,7 +77,7 @@ export const sections: Section[] = [
     groups: [g("tastemaker-still-life", "Still life of accessories for the tastemaker", [
       "Iridescent ribbed socks", "Costa Brazil “Aroma” eau de parfum", "Georg Jensen stainless steel wine coasters", "Vintage silver tray",
       "24K-gold-plated “Scarab” cow tie", "Bur Bur “The Mini Mermaid” detangling brush", "Breda “Pulse” tandem watch", "Pewter hip flask",
-    ])],
+    ], "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp")],
   },
   {
     id: "using", title: "Gifts Worth Using", dek: "Utilitarian essentials, beautifully reimagined", layout: "grid",
@@ -101,7 +101,7 @@ export const sections: Section[] = [
     groups: [g("bonvivant-still-life", "Still life of serveware, snacks, and wine", [
       "Vintage handblown wine goblets", "L’Objet “Prism” green cocktail shaker", "Two-tier stainless steel server tower", "Nutcracker",
       "La Soufflerie glass carafe with head topper", "Vintage 1920s duck decanter", "FrischSchoggi",
-    ])],
+    ], "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp")],
   },
   {
     id: "host", title: "For the Consummate Host", dek: "Placeholder: everything for a well-set table", layout: "still-life",
@@ -109,7 +109,7 @@ export const sections: Section[] = [
       g("host-kitchen", "Still life of kitchen tools beside a leather-bound Mastering the Art of French Cooking", [
         "Gold Footed Grater", "Silver Platter", "Bowl and Olive Wood Spoon", "Abbey-Horn Cow Horn Corkscrew", "Bamboo Salt and Pepper Set",
         "Laguiole Olive Wood Knives", "Leather-Bound Mastering The Art of French Cooking Book", "Horn Cheese Knives Set",
-      ]),
+      ], "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp"),
       g("host-table", "Still life of pears, martini glasses, and wine on a silver tray", [
         "“Borgo” Wine Holder", "Antique Silver Tray", "Pamplemousse “Ernest Creekd” martini glass", "Shelton Metal Shell Cordial",
         "Pair of Vintage Lazaro Nautilus Shell Candlesticks", "Jaymes Paper “Squiggle” Place Cards", "Teaspoon “Squiggle” Place Card Holder",
