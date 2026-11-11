@@ -18,17 +18,20 @@ export const Route = createFileRoute("/")({
 
 function useReveal() {
   useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
     if (!("IntersectionObserver" in window)) {
-      els.forEach((e) => e.classList.add("is-visible"));
+      document.querySelectorAll<HTMLElement>(".reveal").forEach((e) => e.classList.add("is-visible"));
       return;
     }
     const io = new IntersectionObserver(
       (entries) => entries.forEach((en) => en.isIntersecting && (en.target.classList.add("is-visible"), io.unobserve(en.target))),
       { rootMargin: "0px 0px -5% 0px" },
     );
-    els.forEach((e) => io.observe(e));
-    return () => io.disconnect();
+    const scan = () => document.querySelectorAll<HTMLElement>(".reveal:not(.is-visible)").forEach((e) => io.observe(e));
+    scan();
+    // Watch for content added or swapped after first load so it never stays hidden.
+    const mo = new MutationObserver(scan);
+    mo.observe(document.body, { childList: true, subtree: true });
+    return () => (io.disconnect(), mo.disconnect());
   }, []);
 }
 
