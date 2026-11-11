@@ -164,6 +164,54 @@
     "buyUrl": "https://www.kdbiel.com/products/kd-biel-larder-tupelo-honey?_pos=1&_psq=Larder+tupelo+honey&_psid=a18679df7&_ss=e&variant=47062164635833",
     "buttonText": "Buy Now",
     "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/larder-tupelo-honey-and-Abbeyhorn-honey-dipper-kd-biel-DHome-Winter-2026.webp"
+   },
+   {
+    "name": "French sugar dish, tongs, and flower sugar cubes",
+    "vendor": "The Standard McKinney",
+    "price": "$25",
+    "buyUrl": "https://thestandardmckinney.com/products/french-sugar-dish?_pos=2&_psq=French+sugar+dish%2C+tongs%2C+and+flower+sugar+cubes&_psid=a37d29dca&_ss=e",
+    "buttonText": "Buy Now",
+    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/French-Sugar-Dish-tongs-and-flower-sugar-cubes-The-Standard-Mckinney-DHome-Winter-2026.webp"
+   },
+   {
+    "name": "Abbeyhorn honey dipper",
+    "vendor": "KD Biel Design District",
+    "price": "$58",
+    "buyUrl": "https://www.kdbiel.com/products/abbeyhorn-honey-dipper?_pos=1&_psq=Abbeyhorn+honey+dipper&_psid=24677fd05&_ss=e&variant=46990207221945",
+    "buttonText": "Buy Now",
+    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/larder-tupelo-honey-and-Abbeyhorn-honey-dipper-kd-biel-DHome-Winter-2026.webp"
+   },
+   {
+    "name": "Chase Gamblin vessel",
+    "vendor": "Twelve Thirty Four Studio",
+    "price": "$2,500",
+    "buyUrl": "https://twelvethirtyfourflowers.com/search?q=Chase+Gamblin+vessel&options%5Bprefix%5D=last",
+    "buttonText": "Explore the collection",
+    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Chase-Gamblin-vessel-twelve-thirty-four-studio-DHome-Winter-2026.webp"
+   },
+   {
+    "name": "Bocci “14P” portable lamp",
+    "vendor": "Scott + Cooner",
+    "price": "$350",
+    "buyUrl": "In store only",
+    "buttonText": "",
+    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Bocci-14p-portable-lamp-Scott-Cooner-DHome-Winter-2026.webp"
+   },
+   {
+    "name": "Pamplemousse “Ernest Creekd” martini glass",
+    "vendor": "Garde",
+    "price": "$350",
+    "buyUrl": "https://gardeshop.com/products/pamplemousse-ernest-creekd-martini-glass-style-b-h6-5-x-o5?_pos=2&_sid=0168c3cc7&_ss=r",
+    "buttonText": "Buy Now",
+    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp"
+   },
+   {
+    "name": "Shelton Metal Shell Cordial",
+    "vendor": "Commerce Goods & Supply",
+    "price": "$78",
+    "buyUrl": "https://shopcommercedallas.com/products/shelton-metal-shell-cordial?variant=49639357088029",
+    "buttonText": "Buy Now",
+    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp"
    }
   ]
  },
@@ -248,68 +296,12 @@
     "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp"
    },
    {
-    "name": "Pamplemousse “Ernest Creekd” martini glass",
-    "vendor": "Garde",
-    "price": "$350",
-    "buyUrl": "https://gardeshop.com/products/pamplemousse-ernest-creekd-martini-glass-style-b-h6-5-x-o5?_pos=2&_sid=0168c3cc7&_ss=r",
-    "buttonText": "Buy Now",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp"
-   },
-   {
-    "name": "Shelton Metal Shell Cordial",
-    "vendor": "Commerce Goods & Supply",
-    "price": "$78",
-    "buyUrl": "https://shopcommercedallas.com/products/shelton-metal-shell-cordial?variant=49639357088029",
-    "buttonText": "Buy Now",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp"
-   },
-   {
-    "name": "Small round Match pewter tray",
-    "vendor": "KD Biel Design District",
-    "price": "$399",
-    "buyUrl": "https://www.kdbiel.com/products/pewter-small-round-tray?variant=46990149451961&_pos=1&_sid=729622169&_ss=r",
-    "buttonText": "Buy Now",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Cathead-biscuit-cutter-The-Standard-Mckinney-and-small-round-Match-pewter-tray-KD-Biel-DHome-Winter-2026.webp"
-   },
-   {
     "name": "Vintage 1920s duck decanter",
     "vendor": "Weston Table",
     "price": "$5,395",
     "buyUrl": "https://go.skimresources.com?id=254083X1738117&xs=1&url=https%3A%2F%2Fwestontable.com%2Fproducts%2Fvintage-1920s-english-silver-plate-glass-duck-decanter%3F_pos%3D1%26_psq%3DVintage%2B1920s%2Bduck%2Bdecanter%26_psid%3Dc801b96a0%26_ss%3De&sref=holiday-gift-guide-2026",
     "buttonText": "Buy Now",
     "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp"
-   },
-   {
-    "name": "French sugar dish, tongs, and flower sugar cubes",
-    "vendor": "The Standard McKinney",
-    "price": "$25",
-    "buyUrl": "https://thestandardmckinney.com/products/french-sugar-dish?_pos=2&_psq=French+sugar+dish%2C+tongs%2C+and+flower+sugar+cubes&_psid=a37d29dca&_ss=e",
-    "buttonText": "Buy Now",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/French-Sugar-Dish-tongs-and-flower-sugar-cubes-The-Standard-Mckinney-DHome-Winter-2026.webp"
-   },
-   {
-    "name": "Abbeyhorn honey dipper",
-    "vendor": "KD Biel Design District",
-    "price": "$58",
-    "buyUrl": "https://www.kdbiel.com/products/abbeyhorn-honey-dipper?_pos=1&_psq=Abbeyhorn+honey+dipper&_psid=24677fd05&_ss=e&variant=46990207221945",
-    "buttonText": "Buy Now",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/larder-tupelo-honey-and-Abbeyhorn-honey-dipper-kd-biel-DHome-Winter-2026.webp"
-   },
-   {
-    "name": "Chase Gamblin vessel",
-    "vendor": "Twelve Thirty Four Studio",
-    "price": "$2,500",
-    "buyUrl": "https://twelvethirtyfourflowers.com/search?q=Chase+Gamblin+vessel&options%5Bprefix%5D=last",
-    "buttonText": "Explore the collection",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Chase-Gamblin-vessel-twelve-thirty-four-studio-DHome-Winter-2026.webp"
-   },
-   {
-    "name": "Bocci “14P” portable lamp",
-    "vendor": "Scott + Cooner",
-    "price": "$350",
-    "buyUrl": "In store only",
-    "buttonText": "",
-    "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Bocci-14p-portable-lamp-Scott-Cooner-DHome-Winter-2026.webp"
    },
    {
     "name": "L’Objet “Prism” green cocktail shaker",
