@@ -6,9 +6,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Holiday Gift Guide | Considered Gifts for Everyone" },
-      { name: "description", content: "A holiday gift guide in four rooms, from everyday upgrades to serveware for the bon vivant." },
+      { name: "description", content: "A holiday gift guide in five rooms, from everyday upgrades to serveware for the bon vivant." },
       { property: "og:title", content: "Holiday Gift Guide" },
-      { property: "og:description", content: "Considered holiday gifts, styled as editorial still lifes in four rooms." },
+      { property: "og:description", content: "Considered holiday gifts, styled as editorial still lifes in five rooms." },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -103,7 +103,9 @@ function SectionTitle({ section }: { section: Section }) {
 }
 
 function BuyButton({ p }: { p: Product }) {
-  if (!p.buyUrl) return null;
+  if (!p.buttonText) return null;
+  if (!p.buyUrl)
+    return <span className="inline-block shrink-0 font-label text-[0.65rem] uppercase tracking-[0.15em] text-cream/60">{p.buttonText}</span>;
   return (
     <a
       href={p.buyUrl}
@@ -112,7 +114,7 @@ function BuyButton({ p }: { p: Product }) {
       aria-label={`Buy ${p.name} at ${p.vendor}`}
       className="inline-block shrink-0 border border-room-accent/70 px-2 py-0.5 font-label text-[0.65rem] uppercase tracking-[0.15em] text-room-accent transition-colors hover:bg-room-accent/15"
     >
-      Buy at {p.vendor}
+      {p.buttonText}
     </a>
   );
 }
@@ -185,7 +187,7 @@ function GiftSection({ section }: { section: Section }) {
             ))}
           </ul>
         ) : (
-          section.groups.map((g) => <StillLife key={g.id} group={g} />)
+          <div className="grid gap-12">{section.groups.map((g) => <StillLife key={g.id} group={g} />)}</div>
         )}
       </div>
     </section>
