@@ -78,6 +78,6 @@ export const sections: Section[] = (categories as { title: string; products: Pro
     const meta = META.find((m) => c.title.includes(m.match));
     if (!meta) throw new Error(`Unknown category in sheet: ${c.title}`);
     const groups = groupByImage(c.products.map(enrich), meta.id);
-    const layout = groups.length === 1 && (groups[0]?.products.length ?? 0) > 2 ? "still-life" : "grid";
+    const layout = meta.id === "host" || groups.length === 1 && (groups[0]?.products.length ?? 0) > 2 ? "still-life" : "grid";
     return { id: meta.id, title: meta.title, dek: meta.dek, layout, groups };
   });
