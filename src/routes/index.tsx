@@ -6,9 +6,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Holiday Gift Guide | Considered Gifts for Everyone" },
-      { name: "description", content: "A holiday gift guide in five rooms, from everyday upgrades to serveware for the bon vivant." },
+      { name: "description", content: "A holiday gift guide room by room, from everyday upgrades to serveware for the bon vivant." },
       { property: "og:title", content: "Holiday Gift Guide" },
-      { property: "og:description", content: "Considered holiday gifts, styled as editorial still lifes in five rooms." },
+      { property: "og:description", content: "Considered holiday gifts, styled as editorial still lifes room by room." },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -184,7 +184,7 @@ function GiftSection({ section }: { section: Section }) {
       <div className="mx-auto max-w-7xl">
         <SectionTitle section={section} />
         {section.layout === "grid" ? (
-          <ul className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-3 xl:grid-cols-4">
+          <ul className="grid grid-cols-2 items-start gap-x-4 gap-y-6 lg:grid-cols-3 xl:grid-cols-4">
             {section.groups.map((g) => (
               <GroupCard key={g.id} group={g} />
             ))}
