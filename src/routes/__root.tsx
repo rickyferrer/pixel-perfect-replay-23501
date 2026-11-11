@@ -81,8 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "L.A.B.L. Gifts | D Home" },
-      { name: "description", content: "D Home's Winter 2026 holiday gift guide." },
+      { title: "Holiday Gift Guide" },
+      { name: "description", content: "A curated holiday gift guide in four rooms." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
           ],

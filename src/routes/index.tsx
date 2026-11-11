@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { products, sections, type Product, type Section } from "@/data/gifts";
+import { sections, type ImageGroup, type Product, type Section } from "@/data/gifts";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "L.A.B.L. Gifts | D Home Winter 2026 Gift Guide" },
-      { name: "description", content: "D Home's Winter 2026 holiday gift guide, from everyday upgrades to serveware for the bon vivant." },
-      { property: "og:title", content: "L.A.B.L. Gifts | D Home Winter 2026" },
-      { property: "og:description", content: "A holiday gift guide styled as an editorial still life, in four rooms." },
+      { title: "Holiday Gift Guide | Considered Gifts for Everyone" },
+      { name: "description", content: "A holiday gift guide in four rooms, from everyday upgrades to serveware for the bon vivant." },
+      { property: "og:title", content: "Holiday Gift Guide" },
+      { property: "og:description", content: "Considered holiday gifts, styled as editorial still lifes in four rooms." },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -25,7 +25,7 @@ function useReveal() {
     }
     const io = new IntersectionObserver(
       (entries) => entries.forEach((en) => en.isIntersecting && (en.target.classList.add("is-visible"), io.unobserve(en.target))),
-      { rootMargin: "0px 0px -10% 0px" },
+      { rootMargin: "0px 0px -5% 0px" },
     );
     els.forEach((e) => io.observe(e));
     return () => io.disconnect();
@@ -53,30 +53,17 @@ function Index() {
   const active = useActiveSection();
   return (
     <div className="bg-background font-serif text-cream">
-      <header className="px-6 pt-6 md:px-12">
-        <div className="flex items-center justify-between font-label text-xs uppercase tracking-[0.3em]">
-          <span>L.A.B.L.</span>
-          <span className="flex items-center gap-2">
-            <span className="size-1.5 rounded-full bg-folio-dot" aria-hidden />
-            gifts
-            <span className="size-1.5 rounded-full bg-folio-dot" aria-hidden />
-          </span>
-        </div>
-        <hr className="mt-4 border-cream/40" />
+      <header className="flex max-h-[30vh] flex-col justify-center px-4 py-6 md:px-12 md:py-8">
+        <h1 className="reveal font-display text-[clamp(2.25rem,6vw,4.5rem)] font-[200] uppercase leading-none tracking-tight">
+          Holiday Gift Guide
+        </h1>
+        <p className="reveal mt-2 text-lg font-light italic text-cream/85 md:text-xl">
+          Placeholder intro: considered gifts for everyone on your list, gathered room by room.
+        </p>
       </header>
 
-      <section className="px-6 pb-20 pt-16 md:px-12 md:pt-24">
-        <p className="reveal font-label text-xs uppercase tracking-[0.4em] text-blush">D Home · Winter 2026</p>
-        <h1 className="reveal mt-4 font-display text-[clamp(6rem,22vw,18rem)] font-[100] uppercase leading-[0.85] tracking-tight">
-          Gifts
-        </h1>
-        <p className="reveal mt-8 max-w-xl text-2xl font-light leading-snug text-cream/85 md:text-3xl">
-          Placeholder intro. A season of considered objects, gathered from shops across Dallas and styled as still lifes, room by room.
-        </p>
-      </section>
-
-      <nav aria-label="Gift categories" className="sticky top-0 z-30 border-y border-cream/20 bg-background/90 backdrop-blur">
-        <ul className="flex gap-6 overflow-x-auto px-6 py-4 font-label text-xs uppercase tracking-[0.25em] md:justify-center md:gap-12">
+      <nav aria-label="Gift categories" className="sticky top-0 z-30 h-12 border-y border-cream/20 bg-background/90 backdrop-blur">
+        <ul className="flex h-full items-center gap-6 overflow-x-auto px-4 font-label text-xs uppercase tracking-[0.25em] md:justify-center md:gap-12">
           {sections.map((s) => (
             <li key={s.id} className={`room-${s.id} shrink-0`}>
               <a
@@ -84,7 +71,7 @@ function Index() {
                 aria-current={active === s.id ? "true" : undefined}
                 className={`border-b pb-1 transition-colors ${active === s.id ? "border-room-accent text-room-accent" : "border-transparent text-cream/70 hover:text-cream"}`}
               >
-                {s.label}
+                {s.title}
               </a>
             </li>
           ))}
@@ -93,12 +80,11 @@ function Index() {
 
       <main>
         {sections.map((s) => (
-          <GiftSection key={s.id} section={s} items={products.filter((p) => p.section === s.id)} />
+          <GiftSection key={s.id} section={s} />
         ))}
       </main>
 
-      <footer className="px-6 py-12 text-center text-lg italic text-cream/80 md:px-12">
-        <hr className="mb-8 border-cream/30" />
+      <footer className="px-4 py-8 text-center text-lg italic text-cream/80 md:px-12">
         Photography by Elizabeth Lavin; styling by Adam Fortner and Jamie Laubhan-Oliver.
       </footer>
     </div>
@@ -106,80 +92,100 @@ function Index() {
 }
 
 function SectionTitle({ section }: { section: Section }) {
-  const offsets = ["md:ml-0", "md:ml-[18%]", "md:ml-[36%]"];
   return (
-    <header className="reveal mb-16">
-      <h2 id={`${section.id}-h`} aria-label={section.label} className="font-display text-[clamp(3.5rem,11vw,9.5rem)] font-[200] uppercase leading-[0.88] tracking-tight">
-        {section.title.map((w, i) => (
-          <span key={i} className={`block ${offsets[i] ?? ""}`}>{w}</span>
-        ))}
+    <header className="reveal mb-6 flex flex-col gap-1 md:flex-row md:items-baseline md:gap-6">
+      <h2 id={`${section.id}-h`} className="font-display text-[1.75rem] font-[200] uppercase leading-none tracking-tight md:text-[2.5rem]">
+        {section.title}
       </h2>
-      <p className="mt-6 max-w-lg text-2xl font-light italic text-room-accent md:ml-[36%]">{section.dek}</p>
+      <p className="text-lg font-light italic text-room-accent md:text-xl">{section.dek}</p>
     </header>
   );
 }
 
-function Name({ p }: { p: Product }) {
+function BuyButton({ p }: { p: Product }) {
+  if (!p.buyUrl) return null;
   return (
-    <h3 className="font-label text-sm font-semibold uppercase tracking-[0.08em] text-cream">
-      {p.nameParts ? p.nameParts.map((pt, i) => (pt.italic ? <i key={i}>{pt.text}</i> : <span key={i}>{pt.text}</span>)) : p.name}
-    </h3>
+    <a
+      href={p.buyUrl}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      aria-label={`Buy ${p.name} at ${p.vendor}`}
+      className="inline-block shrink-0 border border-room-accent/70 px-2 py-0.5 font-label text-[0.65rem] uppercase tracking-[0.15em] text-room-accent transition-colors hover:bg-room-accent/15"
+    >
+      Buy at {p.vendor}
+    </a>
   );
 }
 
-function Details({ p }: { p: Product }) {
+function ProductLine({ p }: { p: Product }) {
   return (
-    <div className="mt-3">
-      <Name p={p} />
-      <p className="mt-1 text-lg text-cream/80">
-        {p.link ? (
-          <a href={p.link} target="_blank" rel="noopener noreferrer" className="underline decoration-room-accent/60 underline-offset-4 hover:text-room-accent">
-            {p.vendor}
-          </a>
-        ) : (
-          p.vendor
-        )}
-        <span className="text-room-accent"> · {p.price}</span>
-      </p>
-      {p.note && <p className="mt-3 border-l border-room-accent pl-3 text-base italic text-cream/85">{p.note}</p>}
+    <div>
+      <h3 className="font-label text-xs font-semibold uppercase leading-snug tracking-[0.08em] text-cream">
+        {p.nameParts ? p.nameParts.map((pt, i) => (pt.italic ? <i key={i}>{pt.text}</i> : <span key={i}>{pt.text}</span>)) : p.name}
+      </h3>
+      <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <p className="text-base leading-tight text-cream/80">
+          {p.vendor}
+          <span className="text-room-accent"> · {p.price}</span>
+        </p>
+        <BuyButton p={p} />
+      </div>
+      {p.note && <p className="mt-2 border-l border-room-accent pl-3 text-sm italic text-cream/85">{p.note}</p>}
     </div>
   );
 }
 
-function GiftSection({ section, items }: { section: Section; items: Product[] }) {
+function GroupCard({ group }: { group: ImageGroup }) {
   return (
-    <section id={section.id} aria-labelledby={`${section.id}-h`} className={`room-${section.id} velvet scroll-mt-14 px-6 py-24 md:px-12`}>
+    <li className="reveal">
+      <article className="lift">
+        <div className="paper-grain aspect-[4/5] overflow-hidden bg-blush">
+          <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={480} height={600} className="size-full object-cover" />
+        </div>
+        <ul className={`mt-2 ${group.products.length > 1 ? "divide-y divide-cream/15" : ""}`}>
+          {group.products.map((p) => (
+            <li key={p.name} className="py-1.5">
+              <ProductLine p={p} />
+            </li>
+          ))}
+        </ul>
+      </article>
+    </li>
+  );
+}
+
+function StillLife({ group }: { group: ImageGroup }) {
+  return (
+    <div className="grid gap-6 md:grid-cols-[55fr_45fr] md:items-start">
+      <figure className="reveal paper-grain">
+        <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={1200} height={900} className="max-h-[50vh] w-full object-cover md:max-h-[70vh]" />
+        <figcaption className="mt-2 font-label text-xs uppercase tracking-[0.3em] text-room-accent">Clockwise from left</figcaption>
+      </figure>
+      <ol className="reveal grid gap-3">
+        {group.products.map((p, i) => (
+          <li key={p.name} className="flex gap-3 border-t border-room-accent/40 pt-2">
+            <span className="font-display text-lg font-[200] text-room-accent">{String(i + 1).padStart(2, "0")}</span>
+            <ProductLine p={p} />
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
+function GiftSection({ section }: { section: Section }) {
+  return (
+    <section id={section.id} aria-labelledby={`${section.id}-h`} className={`room-${section.id} velvet scroll-mt-12 px-4 py-8 md:px-12`}>
       <div className="mx-auto max-w-7xl">
         <SectionTitle section={section} />
         {section.layout === "grid" ? (
-          <ul className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((p) => (
-              <li key={p.name} className="reveal">
-                <article className="lift">
-                  <div className="paper-grain aspect-square overflow-hidden bg-blush">
-                    <img src={p.image} alt={p.alt} loading="lazy" decoding="async" width={600} height={600} className="size-full object-cover" />
-                  </div>
-                  <Details p={p} />
-                </article>
-              </li>
+          <ul className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-3 xl:grid-cols-4">
+            {section.groups.map((g) => (
+              <GroupCard key={g.id} group={g} />
             ))}
           </ul>
         ) : (
-          <>
-            <figure className="reveal -mx-6 md:-mx-12">
-              <img src={section.heroImage} alt={section.heroAlt} loading="lazy" decoding="async" width={1600} height={900} className="aspect-[16/9] w-full object-cover" />
-              <figcaption className="mt-3 px-6 font-label text-xs uppercase tracking-[0.3em] text-room-accent md:px-12">Clockwise from left</figcaption>
-            </figure>
-            <ol className="mt-14 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-              {items.map((p, i) => (
-                <li key={p.name} className="reveal lift paper-grain border-t border-room-accent/50 pt-4">
-                  <span className="font-display text-3xl font-[200] text-room-accent">{String(i + 1).padStart(2, "0")}</span>
-                  <img src={p.image} alt={p.alt} loading="lazy" decoding="async" width={400} height={400} className="mt-3 aspect-square w-full object-cover" />
-                  <Details p={p} />
-                </li>
-              ))}
-            </ol>
-          </>
+          section.groups.map((g) => <StillLife key={g.id} group={g} />)
         )}
       </div>
     </section>
