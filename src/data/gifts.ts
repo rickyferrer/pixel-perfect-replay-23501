@@ -42,11 +42,16 @@ const ITALIC: Record<string, Product["nameParts"]> = {
 const find = (name: string): Product => {
   const p = all.find((x) => x.name === name);
   if (!p) throw new Error(`Product missing from sheet: ${name}`);
-  return { ...p, note: p.note ?? NOTES[name], nameParts: ITALIC[name] };
+  const out: Product = { ...p };
+  const note = p.note ?? NOTES[name];
+  if (note) out.note = note;
+  const parts = ITALIC[name];
+  if (parts) out.nameParts = parts;
+  return out;
 };
 const g = (id: string, alt: string, names: string[]): ImageGroup => {
   const items = names.map(find);
-  return { id, image: items[0].image || "/placeholder.svg", alt, products: items };
+  return { id, image: items[0]?.image || "/placeholder.svg", alt, products: items };
 };
 
 export const sections: Section[] = [
