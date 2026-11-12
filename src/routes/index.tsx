@@ -55,7 +55,7 @@ function Index() {
   useReveal();
   const active = useActiveSection();
   return (
-    <div className="bg-background font-serif text-cream">
+    <div className={`room-${active || sections[0]?.id} velvet font-serif text-cream transition-[background-color] duration-1000 ease-in-out`}>
       <header className="flex max-h-[30vh] flex-col justify-center px-4 py-6 md:px-12 md:py-8">
         <h1 className="reveal font-display text-[clamp(2.25rem,6vw,4.5rem)] font-[200] uppercase leading-none tracking-tight">
           Holiday Gift Guide
@@ -180,7 +180,7 @@ function StillLife({ group }: { group: ImageGroup }) {
 
 function GiftSection({ section }: { section: Section }) {
   return (
-    <section id={section.id} aria-labelledby={`${section.id}-h`} className={`room-${section.id} velvet scroll-mt-12 px-4 py-8 md:px-12`}>
+    <section id={section.id} aria-labelledby={`${section.id}-h`} className={`room-${section.id} scroll-mt-12 px-4 py-8 md:px-12`}>
       <div className="mx-auto max-w-7xl">
         <SectionTitle section={section} />
         {section.layout === "grid" ? (
