@@ -1,0 +1,841 @@
+{
+  "name": "Holiday Gift Guide",
+  "url": "https://id-preview--1417c4ca-c984-45f2-848d-fadcd59ae2f0.lovable.app/",
+  "sections": [
+    {
+      "id": "elevate",
+      "title": "Elevate the Everday",
+      "dek": "Elegant upgrades for every facet of life",
+      "groups": [
+        {
+          "id": "elevate-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Trudon-1643-carmen-hand-soap-forty-five-ten-DHome-Winter-2026.webp",
+          "alt": "Trudon 1643 “Carmen” hand soap",
+          "products": [
+            {
+              "name": "Trudon 1643 “Carmen” hand soap",
+              "vendor": "Forty Five Ten",
+              "price": "$114",
+              "buyUrl": "https://fortyfiveten.com/products/vixi-liquid-hand-soap?_pos=1&_psq=Trudon+1643+%E2%80%9CCarmen%E2%80%9D+hand+soap&_psid=9fb4adbb1&_ss=e&variant=41567369494605",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Trudon-1643-carmen-hand-soap-forty-five-ten-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 114
+            }
+          ]
+        },
+        {
+          "id": "elevate-1",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Lela-Rose-x-Berkely-Beauchot-boot-jack-Lela-Rose-and-Jamie-boots-Tecovas-DHome-Winter-2026.webp",
+          "alt": "“Jamie” boots",
+          "products": [
+            {
+              "name": "“Jamie” boots",
+              "vendor": "Tecovas",
+              "price": "$545",
+              "buyUrl": "https://go.skimresources.com?id=254083X1738117&xs=1&url=https%3A%2F%2Fwww.tecovas.com%2Fproducts%2Fthe-jamie%3Fcolor%3Dheritage-tan-lizard&sref=holiday-gift-guide-2026",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Lela-Rose-x-Berkely-Beauchot-boot-jack-Lela-Rose-and-Jamie-boots-Tecovas-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 545
+            }
+          ]
+        },
+        {
+          "id": "elevate-2",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/dumpling-clutch-Leatherology-and-match-pewter-octagonal-tray-kd-biel-DHome-Winter-2026.webp",
+          "alt": "“Dumpling” clutch",
+          "products": [
+            {
+              "name": "“Dumpling” clutch",
+              "vendor": "Leatherology",
+              "price": "$160",
+              "buyUrl": "https://go.skimresources.com?id=254083X1738117&xs=1&url=https%3A%2F%2Fwww.leatherology.com%2Fproducts%2Fdumpling-clutch-russet-suede%3F_pos%3D5%26_psq%3D%25E2%2580%259CDumpling%25E2%2580%259D%2Bclutch%26_psid%3D030ab14d4%26_ss%3De%26variant%3D48870454690040&sref=holiday-gift-guide-2026",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/dumpling-clutch-Leatherology-and-match-pewter-octagonal-tray-kd-biel-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 160
+            }
+          ]
+        },
+        {
+          "id": "elevate-3",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/IMG_1039_1400729812811614510.webp",
+          "alt": "Feminine Towel Wraps ",
+          "products": [
+            {
+              "name": "Feminine Towel Wraps ",
+              "vendor": "Sunsoak",
+              "price": "$129",
+              "buyUrl": "https://sunsoakla.com/",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/IMG_1039_1400729812811614510.webp",
+              "sponsored": true,
+              "sponsorBlurb": "The perfect holiday gift for the women in your life, Sunsoak brings everyday luxury to the season. Female-founded and made in the USA, our feminine towel wraps are crafted from 100% premium cotton terry. Add custom embroidery for a personalized touch that makes this thoughtful gift even more special and memorable",
+              "priceNumber": 129
+            }
+          ]
+        },
+        {
+          "id": "elevate-4",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/market-highland-park-socks.webp",
+          "alt": "Market Classic Logo Sock",
+          "products": [
+            {
+              "name": "Market Classic Logo Sock",
+              "vendor": "Market Highland Park",
+              "price": "$28",
+              "buyUrl": "https://markethighlandpark.com/collections/accessories-1/products/market-logo-socks-pair",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/market-highland-park-socks.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 28
+            }
+          ]
+        },
+        {
+          "id": "elevate-5",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/tlazo-candle.webp",
+          "alt": "Flor de luze candle",
+          "products": [
+            {
+              "name": "Flor de luze candle",
+              "vendor": "Tlazo Home",
+              "price": "$35",
+              "buyUrl": "https://www.tlazohome.com/shop/p/flor-de-luz-corona",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/tlazo-candle.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 35
+            }
+          ]
+        },
+        {
+          "id": "elevate-6",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/we-are-1976-kaweco-fountain-pens.webp",
+          "alt": "Kaweco Collection Fountain Pens",
+          "products": [
+            {
+              "name": "Kaweco Collection Fountain Pens",
+              "vendor": "We Are 1976",
+              "price": "$49",
+              "buyUrl": "https://weare1976.com/products/collection-limited-edition-fountain-pen-kaweco-de",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/we-are-1976-kaweco-fountain-pens.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 49
+            }
+          ]
+        }
+      ],
+      "layout": "grid"
+    },
+    {
+      "id": "using",
+      "title": "Gifts Worth Using",
+      "dek": "Utilitarian essentials, beautifully reimagined",
+      "groups": [
+        {
+          "id": "using-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pks-bronze-hand-shovel-and-skultuna-gardening-pot-KD-Biel-DHome-Winter-2026.webp",
+          "alt": "Skultuna gardening pot",
+          "products": [
+            {
+              "name": "Skultuna gardening pot",
+              "vendor": "KD Biel Design District",
+              "price": "$110",
+              "buyUrl": "https://www.kdbiel.com/products/skultana-gardening-pot?_pos=1&_psq=Skultuna+gardening+pot&_psid=b445a8270&_ss=e&variant=46990189265081",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pks-bronze-hand-shovel-and-skultuna-gardening-pot-KD-Biel-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 110
+            }
+          ]
+        },
+        {
+          "id": "using-1",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/RK-edit.webp",
+          "alt": "Gift Card ",
+          "products": [
+            {
+              "name": "Gift Card ",
+              "vendor": "The Do Cut & Color",
+              "price": "$25+",
+              "buyUrl": "https://www.thedocutandcolor.com/gift-cards",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/RK-edit.webp",
+              "sponsored": true,
+              "sponsorBlurb": "Everybody knows, there's just something special about Texas hair. At The Do Cut and Color we make it easy this holiday season to give your Darling a gift they will love. Any amount, online anytime or stop by the salon. Go ahead, Darling, give gorgeous.",
+              "priceNumber": 25
+            }
+          ]
+        },
+        {
+          "id": "using-2",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Printworks-Fire-blanket-All-Good-Things-DHome-Winter-2026.webp",
+          "alt": "Printworks fire blanket",
+          "products": [
+            {
+              "name": "Printworks fire blanket",
+              "vendor": "All Good Things",
+              "price": "$75",
+              "buyUrl": "https://allgoodthings.store/products/fire-blanket?_pos=1&_psq=Printworks+fire+blanket&_psid=020aad602&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Printworks-Fire-blanket-All-Good-Things-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 75
+            }
+          ]
+        },
+        {
+          "id": "using-3",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/2026_CR_FTW_DMagazine-Gift-Guide-Adv_1080x1080.webp",
+          "alt": "Gift Card ",
+          "products": [
+            {
+              "name": "Gift Card ",
+              "vendor": "Canyon Ranch Wellness ",
+              "price": "$50+",
+              "buyUrl": "https://shop.canyonranch.com/collections/club-gift-cards",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/2026_CR_FTW_DMagazine-Gift-Guide-Adv_1080x1080.webp",
+              "sponsored": true,
+              "sponsorBlurb": "Give the gift of total well-being this holiday. A Canyon Ranch gift card unlocks world-class experiences, whether it's a spa day, massage, facial, or full year of wellness. From luxury spa amenities and recovery technology to expert-led fitness classes, explore our gifts to make it a season to remember.",
+              "priceNumber": 50
+            }
+          ]
+        },
+        {
+          "id": "using-4",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Santa-Maria-Novella-Shampoo-for-Pets-The-Conservatory-DHome-Winter-2026.webp",
+          "alt": "Santa Maria Novella shampoo for pets",
+          "products": [
+            {
+              "name": "Santa Maria Novella shampoo for pets",
+              "vendor": "The Conservatory",
+              "price": "$30",
+              "buyUrl": "https://www.theconservatory.shop/products/santa-maria-novella-delicate-shampoo-for-pets?_pos=1&_psq=Santa+Maria+Novella+shampoo+for+pets&_psid=5053fc70a&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Santa-Maria-Novella-Shampoo-for-Pets-The-Conservatory-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 30
+            }
+          ]
+        },
+        {
+          "id": "using-5",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Uncle-Julios.webp",
+          "alt": "Gift Card ",
+          "products": [
+            {
+              "name": "Gift Card ",
+              "vendor": "Uncle Julio's ",
+              "price": "$50",
+              "buyUrl": "https://unclejulios.com/gift-cards/",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Uncle-Julios.webp",
+              "sponsored": true,
+              "sponsorBlurb": "Give the gift of bold flavors and unforgettable moments at Uncle Julio’s! Purchase a $50 gift card and receive $15 off your next visit. Whether you're craving sizzling fajitas, fresh-made favorites, or a night out with friends, there's something delicious waiting. Offer valid January 1–March 1, 2027.",
+              "priceNumber": 50
+            }
+          ]
+        },
+        {
+          "id": "using-6",
+          "image": "/placeholder.svg",
+          "alt": "* WAITING ON ASSETS*",
+          "products": [
+            {
+              "name": "* WAITING ON ASSETS*",
+              "vendor": "Al Biernat's ",
+              "price": "",
+              "buyUrl": "",
+              "image": "https://id-preview--1417c4ca-c984-45f2-848d-fadcd59ae2f0.lovable.app/placeholder.svg",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": null
+            }
+          ]
+        }
+      ],
+      "layout": "grid"
+    },
+    {
+      "id": "tastemaker",
+      "title": "The Fashion Forward Taste Maker (Locked)",
+      "dek": "Fashion-forward accessories designed to stand out",
+      "groups": [
+        {
+          "id": "tastemaker-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+          "alt": "24K-gold-plated “Scarab” cow tie, Georg Jensen stainless steel wine coasters, Bur Bur “The Mini Mermaid” detangling brush, Costa Brazil “Aroma” eau de parfum, Iridescent ribbed socks, Breda “Pulse” tandem watch",
+          "products": [
+            {
+              "name": "24K-gold-plated “Scarab” cow tie",
+              "vendor": "La Double J",
+              "price": "$420",
+              "buyUrl": "https://www.ladoublej.com/en-us/ready-to-wear/jewelry/necklaces/scarab-cow-tie-NEC0041BRA003SOLIDYE05.html",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 420
+            },
+            {
+              "name": "Georg Jensen stainless steel wine coasters",
+              "vendor": "The Conservatory",
+              "price": "$90 for four",
+              "buyUrl": "https://www.theconservatory.shop/products/georg-jensen-wine-bar-coasters-s4-stainless-steel?_pos=1&_sid=43e05c628&_ss=r&_fid=45d3d98ff",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 90
+            },
+            {
+              "name": "Bur Bur “The Mini Mermaid” detangling brush",
+              "vendor": "Commerce Goods & Supply",
+              "price": "$58",
+              "buyUrl": "https://shopcommercedallas.com/products/bur-bur-the-mini-mermaid-brush-nadia?_pos=1&_psq=Bur+Bur+%E2%80%9CThe+Mini+Mermaid%E2%80%9D+detangling+brush&_psid=6f5e31500&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 58
+            },
+            {
+              "name": "Costa Brazil “Aroma” eau de parfum",
+              "vendor": "The Conservatory",
+              "price": "$198",
+              "buyUrl": "https://www.theconservatory.shop/products/costa-brazil-aroma-jungle?_pos=1&_sid=6199c0747&_ss=r&_fid=e15e424ab",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 198
+            },
+            {
+              "name": "Iridescent ribbed socks",
+              "vendor": "Shop Swoon",
+              "price": "$48",
+              "buyUrl": "https://shopswoon.com/products/iridescent-ribbed-sock?_pos=1&_psq=Iridescent+ribbed+socks&_psid=8854513d6&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 48
+            },
+            {
+              "name": "Breda “Pulse” tandem watch",
+              "vendor": "Commerce Goods & Supply",
+              "price": "$250",
+              "buyUrl": "https://shopcommercedallas.com/products/breda-pulse-tandem-watch-gold-cloud?_pos=4&_sid=15a1b04f2&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/fashion-accessories-DHome-Winter-2026-VERT.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 250
+            }
+          ]
+        }
+      ],
+      "layout": "still-life"
+    },
+    {
+      "id": "littles",
+      "title": "Little Luxuries for Little Humans",
+      "dek": "Small treasures for the youngest on your list",
+      "groups": [
+        {
+          "id": "littles-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/baby-cowboy-boots-miron-crosby.webp",
+          "alt": "Pink baby bootie",
+          "products": [
+            {
+              "name": "Pink baby bootie",
+              "vendor": "Miron Crosby",
+              "price": "$60",
+              "buyUrl": "https://mironcrosby.com/collections/mini-crosby/products/pink-baby-bootie",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/baby-cowboy-boots-miron-crosby.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 60
+            }
+          ]
+        },
+        {
+          "id": "littles-1",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/cat-lady-old-maid.webp",
+          "alt": "Cat Lady Old Maid",
+          "products": [
+            {
+              "name": "Cat Lady Old Maid",
+              "vendor": "Toy Maven",
+              "price": "$15",
+              "buyUrl": "https://thetoymaven.com/collections/novelty/products/cat-lady-old-maid",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/cat-lady-old-maid.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 15
+            }
+          ]
+        },
+        {
+          "id": "littles-2",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/we-are-1976-kawaii-tee-for-kids.webp",
+          "alt": "Kawaii Onigiri Tee by Mochi Kids",
+          "products": [
+            {
+              "name": "Kawaii Onigiri Tee by Mochi Kids",
+              "vendor": "We Are 1976",
+              "price": "$40",
+              "buyUrl": "https://weare1976.com/products/copy-of-kawaii-spam-musubi-tee-by-mochi-kids-cal",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/we-are-1976-kawaii-tee-for-kids.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 40
+            }
+          ]
+        },
+        {
+          "id": "littles-3",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/nook-the-kook-grimms.webp",
+          "alt": "Nook the Kook",
+          "products": [
+            {
+              "name": "Nook the Kook",
+              "vendor": "Grimm's Toys",
+              "price": "$65",
+              "buyUrl": "https://www.grimmstoys.shop/product-page/nook-the-kook-4",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/nook-the-kook-grimms.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 65
+            }
+          ]
+        },
+        {
+          "id": "littles-4",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/mini-director-chair-madre.webp",
+          "alt": "Mini Director's Chair",
+          "products": [
+            {
+              "name": "Mini Director's Chair",
+              "vendor": "Madre",
+              "price": "$66",
+              "buyUrl": "https://madredallas.com/products/directors-chair",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/mini-director-chair-madre.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 66
+            }
+          ]
+        },
+        {
+          "id": "littles-5",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/interabang-subscription.webp",
+          "alt": "Storied Beginnings Subscription",
+          "products": [
+            {
+              "name": "Storied Beginnings Subscription",
+              "vendor": "Interabang ",
+              "price": "$75 - $300",
+              "buyUrl": "https://interabangbooks.com/storied-beginnings",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/interabang-subscription.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 75
+            }
+          ]
+        }
+      ],
+      "layout": "grid"
+    },
+    {
+      "id": "bonvivant",
+      "title": "The Bon Vivant",
+      "dek": "Serveware, snacks, and other tasteful indulgences",
+      "groups": [
+        {
+          "id": "bonvivant-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Cathead-biscuit-cutter-The-Standard-Mckinney-and-small-round-Match-pewter-tray-KD-Biel-DHome-Winter-2026.webp",
+          "alt": "Cathead biscuit cutter",
+          "products": [
+            {
+              "name": "Cathead biscuit cutter",
+              "vendor": "The Standard McKinney",
+              "price": "$38",
+              "buyUrl": "https://thestandardmckinney.com/products/cathead-biscuit-cutter?_pos=1&_sid=73ad1f13d&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Cathead-biscuit-cutter-The-Standard-Mckinney-and-small-round-Match-pewter-tray-KD-Biel-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 38
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-1",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Adlan-crowd-pleaser-diffuser-The-Conservator-DHome-Winter-2026.webp",
+          "alt": "Adlan “Crowd Pleaser” diffuser",
+          "products": [
+            {
+              "name": "Adlan “Crowd Pleaser” diffuser",
+              "vendor": "The Conservatory",
+              "price": "$220",
+              "buyUrl": "https://www.theconservatory.shop/products/adlan-diffuser-collection-crowd-pleaser?_pos=1&_psq=Adlan+%E2%80%9CCrowd+Pleaser%E2%80%9D+diffuser&_psid=01b77f554&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Adlan-crowd-pleaser-diffuser-The-Conservator-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 220
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-2",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Noritake-Hoshikage-place-setting-garde-DHome-Winter-2026.webp",
+          "alt": "Noritake Hoshikage place setting",
+          "products": [
+            {
+              "name": "Noritake Hoshikage place setting",
+              "vendor": "Garde",
+              "price": "From $140",
+              "buyUrl": "https://gardeshop.com/search?q=Noritake+Hoshikage",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Noritake-Hoshikage-place-setting-garde-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 140
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-3",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Ha-Ko-paper-incense-shop-swoon-DHome-Winter-2026.webp",
+          "alt": "Ha Ko paper incense",
+          "products": [
+            {
+              "name": "Ha Ko paper incense",
+              "vendor": "Shop Swoon",
+              "price": "$56",
+              "buyUrl": "https://shopswoon.com/products/ha-ko-paper-incense-black-no-03-sleep?_pos=1&_sid=1292edea1&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Ha-Ko-paper-incense-shop-swoon-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 56
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-4",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Vintage-1880s-Barron-and-Wilson-copper-bain-marie-Weston-Table-DHome-Winter-2026.webp",
+          "alt": "Vintage 1880s Barron & Wilson copper bain marie",
+          "products": [
+            {
+              "name": "Vintage 1880s Barron & Wilson copper bain marie",
+              "vendor": "Weston Table",
+              "price": "$9,995 for set",
+              "buyUrl": "https://go.skimresources.com?id=254083X1738117&xs=1&url=https%3A%2F%2Fwestontable.com%2Fproducts%2Fvintage-1880s-barron-wilson-copper-bain-marie%3F_pos%3D1%26_psq%3DVintage%2B1880s%2BBarron%2B%2526%2BWilson%2Bcopper%2Bbain%2Bmarie%26_psid%3D4c84239b5%26_ss%3De&sref=holiday-gift-guide",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Vintage-1880s-Barron-and-Wilson-copper-bain-marie-Weston-Table-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 9995
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-5",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/larder-tupelo-honey-and-Abbeyhorn-honey-dipper-kd-biel-DHome-Winter-2026.webp",
+          "alt": "Larder tupelo honey, Abbeyhorn honey dipper",
+          "products": [
+            {
+              "name": "Larder tupelo honey",
+              "vendor": "KD Biel Design District",
+              "price": "$45",
+              "buyUrl": "https://www.kdbiel.com/products/kd-biel-larder-tupelo-honey?_pos=1&_psq=Larder+tupelo+honey&_psid=a18679df7&_ss=e&variant=47062164635833",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/larder-tupelo-honey-and-Abbeyhorn-honey-dipper-kd-biel-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 45
+            },
+            {
+              "name": "Abbeyhorn honey dipper",
+              "vendor": "KD Biel Design District",
+              "price": "$58",
+              "buyUrl": "https://www.kdbiel.com/products/abbeyhorn-honey-dipper?_pos=1&_psq=Abbeyhorn+honey+dipper&_psid=24677fd05&_ss=e&variant=46990207221945",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/larder-tupelo-honey-and-Abbeyhorn-honey-dipper-kd-biel-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 58
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-6",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/French-Sugar-Dish-tongs-and-flower-sugar-cubes-The-Standard-Mckinney-DHome-Winter-2026.webp",
+          "alt": "French sugar dish, tongs, and flower sugar cubes",
+          "products": [
+            {
+              "name": "French sugar dish, tongs, and flower sugar cubes",
+              "vendor": "The Standard McKinney",
+              "price": "$25",
+              "buyUrl": "https://thestandardmckinney.com/products/french-sugar-dish?_pos=2&_psq=French+sugar+dish%2C+tongs%2C+and+flower+sugar+cubes&_psid=a37d29dca&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/French-Sugar-Dish-tongs-and-flower-sugar-cubes-The-Standard-Mckinney-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 25
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-7",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Chase-Gamblin-vessel-twelve-thirty-four-studio-DHome-Winter-2026.webp",
+          "alt": "Chase Gamblin vessel",
+          "products": [
+            {
+              "name": "Chase Gamblin vessel",
+              "vendor": "Twelve Thirty Four Studio",
+              "price": "$2,500",
+              "buyUrl": "https://twelvethirtyfourflowers.com/search?q=Chase+Gamblin+vessel&options%5Bprefix%5D=last",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Chase-Gamblin-vessel-twelve-thirty-four-studio-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 2500
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-8",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Bocci-14p-portable-lamp-Scott-Cooner-DHome-Winter-2026.webp",
+          "alt": "Bocci “14P” portable lamp",
+          "products": [
+            {
+              "name": "Bocci “14P” portable lamp",
+              "vendor": "Scott + Cooner",
+              "price": "$350",
+              "buyUrl": "",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Bocci-14p-portable-lamp-Scott-Cooner-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 350
+            }
+          ]
+        },
+        {
+          "id": "bonvivant-9",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp",
+          "alt": "Pamplemousse “Ernest Creekd”, Shelton Metal Shell Cordial",
+          "products": [
+            {
+              "name": "Pamplemousse “Ernest Creekd”",
+              "vendor": "Martini Glass Garde",
+              "price": "$350",
+              "buyUrl": "https://gardeshop.com/products/pamplemousse-ernest-creekd-martini-glass-style-b-h6-5-x-o5?_pos=2&_sid=0168c3cc7&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 350
+            },
+            {
+              "name": "Shelton Metal Shell Cordial",
+              "vendor": "Commerce Goods & Supply",
+              "price": "$78",
+              "buyUrl": "https://shopcommercedallas.com/products/shelton-metal-shell-cordial?variant=49639357088029",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/pears-martini-glasses-wine-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 78
+            }
+          ]
+        }
+      ],
+      "layout": "grid"
+    },
+    {
+      "id": "reader",
+      "title": "The Avid Reader",
+      "dek": "Handsome additions to the bookshelf",
+      "groups": [
+        {
+          "id": "reader-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/carma-sterling-silver-book-jewels-Birds-bookstore-and-The-Grapes-of-Wrath-Leather-Bound-Edition-Weston-Table-DHome-Winter-2026.webp",
+          "alt": "The Grapes of Wrath leather-bound edition",
+          "products": [
+            {
+              "name": "The Grapes of Wrath leather-bound edition",
+              "vendor": "Weston Table",
+              "price": "$115",
+              "buyUrl": "https://go.skimresources.com?id=254083X1738117&xs=1&url=https%3A%2F%2Fwestontable.com%2Fproducts%2Fthe-grapes-of-wrath-leather-bound-edition%3F_pos%3D1%26_sid%3Daf8f65f33%26_ss%3Dr&sref=holiday-gift-guide-2026",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/carma-sterling-silver-book-jewels-Birds-bookstore-and-The-Grapes-of-Wrath-Leather-Bound-Edition-Weston-Table-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 115
+            }
+          ]
+        },
+        {
+          "id": "reader-1",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/living-mandala-of-oz-first-edition-.webp",
+          "alt": "First Edition Oracle Deck",
+          "products": [
+            {
+              "name": "First Edition Oracle Deck",
+              "vendor": "Living Mandala of Oz ",
+              "price": "$208",
+              "buyUrl": "https://store.livingmandalaofoz.com/products/oracle-deck-box-and-booklet-pre-sale-of-first-edition-decks-ship-later-fall-2026?variant=53664557039929",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/living-mandala-of-oz-first-edition-.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 208
+            }
+          ]
+        },
+        {
+          "id": "reader-2",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/W.W.-Norton-I.-M.-Pei-Life-is-Architecture-Regular-price85.webp",
+          "alt": "I.M. Pei: Life Is Architecture",
+          "products": [
+            {
+              "name": "I.M. Pei: Life Is Architecture",
+              "vendor": "The Conservatory",
+              "price": "$85",
+              "buyUrl": "https://www.theconservatory.shop/collections/books-and-paper/products/w-w-norton-company-i-m-pei-life-is-architecture",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/W.W.-Norton-I.-M.-Pei-Life-is-Architecture-Regular-price85.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 85
+            }
+          ]
+        },
+        {
+          "id": "reader-3",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/frequent-flyer-birds-bookstore-scaled.webp",
+          "alt": "Frequent Flyer's Membership",
+          "products": [
+            {
+              "name": "Frequent Flyer's Membership",
+              "vendor": "Bird's Bookstore",
+              "price": "$200 a year",
+              "buyUrl": "https://www.birdsbookstore.com/shop/p/frequent-flyers-membership",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/frequent-flyer-birds-bookstore-scaled.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 200
+            }
+          ]
+        }
+      ],
+      "layout": "grid"
+    },
+    {
+      "id": "host",
+      "title": "For the Consummate Host (Locked)",
+      "dek": "Everything for a well-set table",
+      "groups": [
+        {
+          "id": "host-0",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+          "alt": "Abbey_x0002_Horn Cow Horn Corkscrew, Horn Cheese Knives Set, Leather-Bound Mastering The Art of French Cooking Book, Bamboo Salt and Pepper Set, Laguiole Olive Wood Knives, Gold Footed Grater",
+          "products": [
+            {
+              "name": "Abbey_x0002_Horn Cow Horn Corkscrew",
+              "vendor": "KD Biel Design District",
+              "price": "$95",
+              "buyUrl": "https://www.kdbiel.com/products/abbeyhorn-cow-horn-corkscrew-thistle?variant=46990355660985&_pos=1&_sid=15ef8699c&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 95
+            },
+            {
+              "name": "Horn Cheese Knives Set",
+              "vendor": "All Good Things",
+              "price": "$46",
+              "buyUrl": "https://allgoodthings.store/products/horn-cheese-knives-set?_pos=1&_sid=6e4be77fe&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 46
+            },
+            {
+              "name": "Leather-Bound Mastering The Art of French Cooking Book",
+              "vendor": "Commerce Goods & Supply",
+              "price": "$140",
+              "buyUrl": "https://shopcommercedallas.com/products/graphic-image-julia-child?_pos=1&_sid=ea033ed59&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 140
+            },
+            {
+              "name": "Bamboo Salt and Pepper Set",
+              "vendor": "Ellis Hill",
+              "price": "$1,295",
+              "buyUrl": "https://ellis-hill.com/products/bamboo-salt-and-pepper-set?_pos=1&_sid=2ee2713f1&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 1295
+            },
+            {
+              "name": "Laguiole Olive Wood Knives",
+              "vendor": "Blue Print",
+              "price": "$420 for Six",
+              "buyUrl": "https://blueprintstore.com/products/olive-wood-knife-set?_pos=1&_sid=1c4df5c5b&_ss=r",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 420
+            },
+            {
+              "name": "Gold Footed Grater",
+              "vendor": " All Good Things",
+              "price": "$38",
+              "buyUrl": "https://allgoodthings.store/products/gold-footed-grater",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Julia-Child-Mastering-the-Art-of-French-Cooking-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 38
+            }
+          ]
+        },
+        {
+          "id": "host-1",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp",
+          "alt": "Two-tier stainless steel server tower, FrischSchoggi, Vintage 1920s duck decanter, L’Objet “Prism” green cocktail shaker",
+          "products": [
+            {
+              "name": "Two-tier stainless steel server tower",
+              "vendor": "Crate & Barrel",
+              "price": "$130",
+              "buyUrl": "https://www.crateandbarrel.com/2-tier-stainless-steel-server-tower/s592775",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 130
+            },
+            {
+              "name": "FrischSchoggi",
+              "vendor": "Läderach",
+              "price": "From $25",
+              "buyUrl": "https://laderach.com/us-en/10111104-frischschoggi-tin",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 25
+            },
+            {
+              "name": "Vintage 1920s duck decanter",
+              "vendor": "Weston Table",
+              "price": "$5,395",
+              "buyUrl": "https://go.skimresources.com?id=254083X1738117&xs=1&url=https%3A%2F%2Fwestontable.com%2Fproducts%2Fvintage-1920s-english-silver-plate-glass-duck-decanter%3F_pos%3D1%26_psq%3DVintage%2B1920s%2Bduck%2Bdecanter%26_psid%3Dc801b96a0%26_ss%3De&sref=holiday-gift-guide-2026",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 5395
+            },
+            {
+              "name": "L’Objet “Prism” green cocktail shaker",
+              "vendor": "Blue Print",
+              "price": "$200",
+              "buyUrl": "https://blueprintstore.com/products/prism-green-cocktail-shaker?_pos=1&_psq=L%E2%80%99Objet+%E2%80%9CPrism%E2%80%9D+green+cocktail+shaker&_psid=64123c14a&_ss=e",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/serveware-snacks-wine-DHome-Winter-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 200
+            }
+          ]
+        }
+      ],
+      "layout": "still-life"
+    }
+  ]
+}

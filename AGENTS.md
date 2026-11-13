@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Keep image-group data and SEO derivation in browser-safe data modules so page content, feed, and structured data share one source.
+- Generate public gift exports in the Vite build hook and prerender only the public guide so crawlers receive complete HTML without adding runtime APIs.
+- Use one stretched product link per gift and a separately layered sponsor control so overlays never nest interactive controls or change layout.
