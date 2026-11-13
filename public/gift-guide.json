@@ -235,30 +235,13 @@
               "priceNumber": 50
             }
           ]
-        },
-        {
-          "id": "using-6",
-          "image": "/placeholder.svg",
-          "alt": "* WAITING ON ASSETS*",
-          "products": [
-            {
-              "name": "* WAITING ON ASSETS*",
-              "vendor": "Al Biernat's ",
-              "price": "",
-              "buyUrl": "",
-              "image": "https://id-preview--1417c4ca-c984-45f2-848d-fadcd59ae2f0.lovable.app/placeholder.svg",
-              "sponsored": false,
-              "sponsorBlurb": "",
-              "priceNumber": null
-            }
-          ]
         }
       ],
       "layout": "grid"
     },
     {
       "id": "tastemaker",
-      "title": "The Fashion Forward Taste Maker (Locked)",
+      "title": "The Fashion Forward Taste Maker",
       "dek": "Fashion-forward accessories designed to stand out",
       "groups": [
         {
@@ -717,7 +700,7 @@
     },
     {
       "id": "host",
-      "title": "For the Consummate Host (Locked)",
+      "title": "For the Consummate Host",
       "dek": "Everything for a well-set table",
       "groups": [
         {

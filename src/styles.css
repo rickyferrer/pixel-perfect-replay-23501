@@ -221,13 +221,10 @@ html { scroll-behavior: smooth; }
 * { letter-spacing: 0 !important; }
 .guide-banner { min-height: 0; }
 .has-js .reveal:not(.is-visible) { opacity: 0; transform: translateY(24px); }
-.gift-frame { position: relative; isolation: isolate; transition: box-shadow .2s ease; }
-.gift-frame:has(.gift-link):hover { box-shadow: 0 0 0 1px var(--room-accent); }
+.gift-frame { position: relative; isolation: isolate; }
 .gift-link { cursor: pointer; outline: none; }
 .gift-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 .gift-link:focus-visible::after { outline: 2px solid var(--room-accent); outline-offset: 3px; }
-.gift-link:hover .buy-cue { background-color: var(--room-accent); color: var(--room); }
-.buy-cue { max-width: 100%; overflow-wrap: anywhere; transition: background-color .2s, color .2s; }
 .gift-frame:has(.sponsor-toggle) { padding-bottom: 38px; }
 .sponsor-toggle { position: absolute; bottom: 3px; left: 0; z-index: 4; }
 .sponsor-panel { position: absolute; inset: 0; z-index: 3; padding: 16px 16px 48px; overflow-y: auto; background: color-mix(in oklch, var(--room) 96%, transparent); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(8px); transition: opacity .2s, transform .2s, visibility .2s; }
@@ -235,18 +232,17 @@ html { scroll-behavior: smooth; }
 .sponsor-panel:focus-visible { outline: 2px solid var(--room-accent); outline-offset: -2px; }
 .category-link:focus-visible { outline: 2px solid var(--room-accent); outline-offset: 4px; }
 .still-row { display: grid; gap: 24px; align-items: center; }
-.still-image { height: min(50vh, 600px); }
+.still-image { width: 100%; }
 figure, ol { min-width: 0; margin: 0; }
 @media (min-width: 768px) {
   .still-row { grid-template-columns: minmax(0, 55fr) minmax(0, 45fr); }
-  .still-image { height: min(70vh, 760px); }
   .still-row.is-reversed { grid-template-columns: minmax(0, 45fr) minmax(0, 55fr); }
   .still-row.is-reversed figure { grid-column: 2; grid-row: 1; }
   .still-row.is-reversed ol { grid-column: 1; grid-row: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .has-js .reveal:not(.is-visible) { opacity: 1; transform: none; }
-  .sponsor-panel, .gift-frame, .buy-cue, .velvet { transition: none !important; }
+  .sponsor-panel, .velvet { transition: none !important; }
 }
 @media print {
   .sponsor-panel { position: static; opacity: 1; visibility: visible; transform: none; }

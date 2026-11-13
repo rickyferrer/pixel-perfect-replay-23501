@@ -3,9 +3,9 @@ import { sections, groupByImage, type Product } from "@/data/gifts";
 import { createStructuredData, priceNumber, isBuyUrl } from "@/data/gift-seo";
 
 describe("Clean by category data", () => {
-  it("preserves every row including the waiting-on-assets row", () => {
-    expect(sections.map((s) => s.groups.reduce((n, g) => n + g.products.length, 0))).toEqual([7, 7, 6, 6, 12, 4, 10]);
-    expect(sections[1]?.groups.flatMap((g) => g.products).at(-1)?.name).toBe("* WAITING ON ASSETS*");
+  it("preserves the selected rows and excludes Al Biernat's", () => {
+    expect(sections.map((s) => s.groups.reduce((n, g) => n + g.products.length, 0))).toEqual([7, 6, 6, 6, 12, 4, 10]);
+    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).some((p) => p.vendor.trim() === "Al Biernat's")).toBe(false);
   });
   it("uses the four sponsored selections in the sheet", () => {
     expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "The Do Cut & Color", "Canyon Ranch Wellness ", "Uncle Julio's "]);

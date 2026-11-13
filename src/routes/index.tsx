@@ -103,7 +103,6 @@ function ProductBody({ product }: { product: Product }) {
     <h3 className="font-label text-xs font-semibold uppercase leading-snug text-cream">{product.name}</h3>
     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
       <p className="text-base leading-tight text-cream/80">{product.vendor}<span className="text-room-accent"> · {product.price}</span></p>
-      {isBuyUrl(product.buyUrl) && <span className="buy-cue border border-room-accent/70 px-2 py-0.5 font-label text-[0.65rem] uppercase text-room-accent">Buy at {product.vendor}</span>}
     </div>
     {product.note && <p className="mt-2 text-sm italic text-cream/85">{product.note}</p>}
   </div>;
@@ -139,8 +138,8 @@ function GiftFrame({ product, id, children }: { product: Product; id: string; ch
 }
 
 function GroupImage({ group, still = false }: { group: ImageGroup; still?: boolean }) {
-  return <div className={`paper-grain overflow-hidden bg-blush ${still ? "still-image" : "aspect-[4/5]"}`}>
-    <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={480} height={600} className={`size-full ${still ? "object-contain" : "object-cover"}`} />
+  return <div className={still ? "still-image" : "paper-grain overflow-hidden bg-blush aspect-[4/5]"}>
+    <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={480} height={600} className={still ? "block h-auto w-full" : "size-full object-cover"} />
   </div>;
 }
 

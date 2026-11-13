@@ -316,7 +316,7 @@
     },
     {
       "@type": "ItemList",
-      "name": "The Fashion Forward Taste Maker (Locked)",
+      "name": "The Fashion Forward Taste Maker",
       "description": "Fashion-forward accessories designed to stand out",
       "numberOfItems": 6,
       "itemListElement": [
@@ -959,7 +959,7 @@
     },
     {
       "@type": "ItemList",
-      "name": "For the Consummate Host (Locked)",
+      "name": "For the Consummate Host",
       "description": "Everything for a well-set table",
       "numberOfItems": 10,
       "itemListElement": [

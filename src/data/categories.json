@@ -123,20 +123,11 @@
         "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Uncle-Julios.webp",
         "sponsored": true,
         "sponsorBlurb": "Give the gift of bold flavors and unforgettable moments at Uncle Julio’s! Purchase a $50 gift card and receive $15 off your next visit. Whether you're craving sizzling fajitas, fresh-made favorites, or a night out with friends, there's something delicious waiting. Offer valid January 1–March 1, 2027."
-      },
-      {
-        "name": "* WAITING ON ASSETS*",
-        "vendor": "Al Biernat's ",
-        "price": "",
-        "buyUrl": "",
-        "image": "",
-        "sponsored": false,
-        "sponsorBlurb": ""
       }
     ]
   },
   {
-    "title": "The Fashion Forward Taste Maker (Locked)",
+    "title": "The Fashion Forward Taste Maker",
     "products": [
       {
         "name": "24K-gold-plated “Scarab” cow tie",
@@ -408,7 +399,7 @@
     ]
   },
   {
-    "title": "For the Consummate Host (Locked)",
+    "title": "For the Consummate Host",
     "products": [
       {
         "name": "Abbey_x0002_Horn Cow Horn Corkscrew",
