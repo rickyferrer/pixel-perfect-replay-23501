@@ -103,6 +103,7 @@ function ProductBody({ product }: { product: Product }) {
     <h3 className="font-label text-xs font-semibold uppercase leading-snug text-cream">{product.name}</h3>
     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
       <p className="text-base leading-tight text-cream/80">{product.vendor}<span className="text-room-accent"> · {product.price}</span></p>
+      {isBuyUrl(product.buyUrl) && <span className="max-w-full border border-room-accent/70 px-2 py-0.5 font-label text-[0.65rem] uppercase text-room-accent wrap-anywhere">Buy at {product.vendor}</span>}
     </div>
     {product.note && <p className="mt-2 text-sm italic text-cream/85">{product.note}</p>}
   </div>;
