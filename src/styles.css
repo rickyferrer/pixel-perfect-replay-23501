@@ -32,7 +32,7 @@
 @theme inline {
   --font-display: "Antonio", "Oswald", sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-label: "Oswald", sans-serif;
+  --font-label: "Founders Grotesk", Arial, sans-serif;
   --color-cream: var(--cream);
   --color-room: var(--room);
   --color-room-accent: var(--room-accent);
@@ -225,6 +225,11 @@ html { scroll-behavior: smooth; }
 .gift-link { cursor: pointer; outline: none; }
 .gift-link::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 .gift-link:focus-visible::after { outline: 2px solid var(--room-accent); outline-offset: 3px; }
+.image-shop { position: relative; }
+.image-ctas { position: absolute; inset: auto 12px 12px; z-index: 2; display: flex; flex-wrap: wrap; gap: 6px; }
+.image-ctas .image-buy { height: auto; min-height: 32px; max-width: 100%; padding: 8px 12px; border-radius: 9999px; background: var(--cream); color: var(--background); border: none; white-space: normal; overflow-wrap: anywhere; line-height: 1.1; text-align: center; font-family: var(--font-label); font-size: 11px; font-weight: 400; }
+.image-ctas .image-buy:hover { background: var(--room-accent); }
+.image-buy:focus-visible { outline: 2px solid var(--room-accent); outline-offset: 3px; }
 .gift-frame:has(.sponsor-toggle) { padding-bottom: 38px; }
 .sponsor-toggle { position: absolute; bottom: 3px; left: 0; z-index: 4; }
 .sponsor-panel { position: absolute; inset: 0; z-index: 3; padding: 16px 16px 48px; overflow-y: auto; background: color-mix(in oklch, var(--room) 96%, transparent); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(8px); transition: opacity .2s, transform .2s, visibility .2s; }

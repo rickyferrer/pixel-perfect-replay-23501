@@ -32,3 +32,5 @@ use the editor.
 - Keep image-group data and SEO derivation in browser-safe data modules so page content, feed, and structured data share one source.
 - Generate public gift exports in the Vite build hook and prerender only the public guide so crawlers receive complete HTML without adding runtime APIs.
 - Use one stretched product link per gift and a separately layered sponsor control so overlays never nest interactive controls or change layout.
+- Load uploaded font faces from asset pointers in the document head so font files remain CDN-managed rather than repository binaries.
+- Shared-photo buy pills link to each product independently; single-photo pills remain within the stretched gift link to avoid nested anchors.

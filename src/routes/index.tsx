@@ -102,10 +102,9 @@ function Index() {
 function ProductBody({ product }: { product: Product }) {
   return <div>
     {product.sponsored && <p className="mb-1 font-label text-xs uppercase text-room-accent">Sponsored</p>}
-    <h3 className="font-label text-xs font-semibold uppercase leading-snug text-cream">{product.name}</h3>
+    <h3 className="font-label text-xs font-bold uppercase leading-snug text-cream">{product.name}</h3>
     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
       <p className="text-base leading-tight text-cream/80">{product.vendor}<span className="text-room-accent"> · {product.price}</span></p>
-      {isBuyUrl(product.buyUrl) && <span className="max-w-full border border-room-accent/70 px-2 py-0.5 font-label text-[0.65rem] uppercase text-room-accent wrap-anywhere">Buy at {product.vendor}</span>}
     </div>
     {product.note && <p className="mt-2 text-sm italic text-cream/85">{product.note}</p>}
   </div>;
@@ -140,9 +139,17 @@ function GiftFrame({ product, id, children }: { product: Product; id: string; ch
   </article>;
 }
 
-function GroupImage({ group, still = false }: { group: ImageGroup; still?: boolean }) {
-  return <div className={still ? "still-image" : "paper-grain overflow-hidden bg-blush aspect-[4/5]"}>
-    <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={480} height={600} className={still ? "block h-auto w-full" : "size-full object-cover"} />
+function GroupImage({ group, still = false, singleLink = false }: { group: ImageGroup; still?: boolean; singleLink?: boolean }) {
+  return <div className="image-shop">
+    <div className={still ? "still-image" : "paper-grain overflow-hidden bg-blush aspect-[4/5]"}>
+      <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={480} height={600} className={still ? "block h-auto w-full" : "size-full object-cover"} />
+    </div>
+    <div className="image-ctas">
+      {group.products.map((product, i) => isBuyUrl(product.buyUrl) ? singleLink
+        ? <span key={i} className="image-buy">Buy at {product.vendor}</span>
+        : <Button key={i} asChild variant="editorial" size="sm" className="image-buy"><a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored" aria-label={`Buy ${product.name} at ${product.vendor}`}>{group.products.length > 1 ? `${String(i + 1).padStart(2, "0")} · ` : ""}Buy at {product.vendor}</a></Button>
+        : null)}
+    </div>
   </div>;
 }
 
@@ -159,7 +166,7 @@ function GroupCard({ group }: { group: ImageGroup }) {
   const single = group.products.length === 1 ? group.products[0] : undefined;
   return <li className="reveal">
     {single ? <GiftFrame product={single} id={group.id}>
-      <GiftLink product={single}><GroupImage group={group} /><div className="pt-2"><ProductBody product={single} /></div></GiftLink>
+      <GiftLink product={single}><GroupImage group={group} singleLink /><div className="pt-2"><ProductBody product={single} /></div></GiftLink>
     </GiftFrame> : <article>
       <GroupImage group={group} />
       <ul className="mt-2 divide-y divide-cream/15">{group.products.map((product, i) => <li key={`${group.id}-${i}`}><ProductRow product={product} id={`${group.id}-${i}`} /></li>)}</ul>

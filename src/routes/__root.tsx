@@ -11,7 +11,18 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import foundersRegular from "@/assets/founders-grotesk-regular.asset.json";
+import foundersBold from "@/assets/founders-grotesk-bold.asset.json";
+import foundersItalic from "@/assets/founders-grotesk-regular-italic.asset.json";
+import foundersBoldItalic from "@/assets/founders-grotesk-bold-italic.asset.json";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+
+const foundersFaces = [
+  { asset: foundersRegular, weight: 400, style: "normal" },
+  { asset: foundersBold, weight: 700, style: "normal" },
+  { asset: foundersItalic, weight: 400, style: "italic" },
+  { asset: foundersBoldItalic, weight: 700, style: "italic" },
+].map(({ asset, weight, style }) => `@font-face { font-family: "Founders Grotesk"; src: url("${asset.url}") format("opentype"); font-weight: ${weight}; font-style: ${style}; font-display: swap; }`).join("\n");
 
 function NotFoundComponent() {
   return (
@@ -108,6 +119,7 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <style>{foundersFaces}</style>
       </head>
       <body>
         {children}
