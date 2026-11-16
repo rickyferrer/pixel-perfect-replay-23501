@@ -99,11 +99,14 @@ function Index() {
   );
 }
 
-function ProductBody({ product }: { product: Product }) {
+function ProductBody({ product, purchase = false }: { product: Product; purchase?: boolean }) {
   const title = product.name.trim().replace(/\b[a-z][\w’'-]*/gi, (word) => /^(a|an|and|at|by|for|in|of|on|or|the|to|with)$/i.test(word) ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1)).replace(/(['’])S\b/g, "$1s");
   return <div>
     {product.sponsored && <p className="mb-1 font-label text-xs uppercase text-room-accent">Sponsored</p>}
-    <h3 className="font-label text-base font-bold leading-snug text-cream wrap-anywhere">{title.charAt(0).toUpperCase() + title.slice(1)}</h3>
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+      <h3 className="min-w-0 font-label text-base font-bold leading-snug text-cream wrap-anywhere">{title.charAt(0).toUpperCase() + title.slice(1)}</h3>
+      {purchase && isBuyUrl(product.buyUrl) && <span className="product-buy">Buy at {product.vendor}</span>}
+    </div>
     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
       <p className="text-base leading-tight text-cream/80">{product.vendor}<span className="text-room-accent"> · {product.price}</span></p>
     </div>
@@ -145,12 +148,12 @@ function GroupImage({ group, still = false, singleLink = false }: { group: Image
     <div className={still ? "still-image" : "paper-grain overflow-hidden bg-blush aspect-[4/5]"}>
       <img src={group.image} alt={group.alt} loading="lazy" decoding="async" width={480} height={600} className={still ? "block h-auto w-full" : "size-full object-cover"} />
     </div>
-    <div className="image-ctas">
+    {group.products.length === 1 && <div className="image-ctas">
       {group.products.map((product, i) => isBuyUrl(product.buyUrl) ? singleLink
         ? <span key={i} className="image-buy">Buy at {product.vendor}</span>
         : <Button key={i} asChild variant="editorial" size="sm" className="image-buy"><a href={product.buyUrl} target="_blank" rel="noopener noreferrer sponsored" aria-label={`Buy ${product.name} at ${product.vendor}`}>{group.products.length > 1 ? `${String(i + 1).padStart(2, "0")} · ` : ""}Buy at {product.vendor}</a></Button>
         : null)}
-    </div>
+    </div>}
   </div>;
 }
 
@@ -158,7 +161,7 @@ function ProductRow({ product, id, number }: { product: Product; id: string; num
   return <GiftFrame product={product} id={id}>
     <GiftLink product={product}><div className="flex gap-3 py-2">
       {number !== undefined && <span className="font-display text-lg font-[200] text-room-accent">{String(number + 1).padStart(2, "0")}</span>}
-      <ProductBody product={product} />
+      <ProductBody product={product} purchase />
     </div></GiftLink>
   </GiftFrame>;
 }
