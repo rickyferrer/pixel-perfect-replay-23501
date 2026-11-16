@@ -75,11 +75,13 @@ function Index() {
     <SponsorContext.Provider value={{ open, setOpen }}>
       <div className={`room-${active} velvet font-serif text-cream transition-[background-color] duration-1000 ease-in-out`}>
         <header className="guide-banner px-4 py-6 md:px-12">
-          <h1 className="reveal font-display text-4xl font-[200] uppercase leading-none md:text-6xl">Holiday Gift Guide</h1>
-          <p className="reveal mt-2 text-lg font-light italic text-cream/85">Considered holiday gifts for everyone on your list.</p>
+          <div className="mx-auto max-w-7xl">
+            <h1 className="reveal font-display text-4xl font-[200] uppercase leading-none md:text-6xl">Holiday Gift Guide</h1>
+            <p className="reveal mt-2 text-lg font-light italic text-cream/85">Considered holiday gifts for everyone on your list.</p>
+          </div>
         </header>
-        <nav aria-label="Gift categories" className="sticky top-0 z-40 h-12 border-y border-cream/20 bg-background/90 backdrop-blur">
-          <ul className="mx-auto flex h-full max-w-7xl items-center gap-6 overflow-x-auto px-4 font-label text-xs uppercase md:gap-8">
+        <nav aria-label="Gift categories" className="sticky top-0 z-40 h-12 border-y border-cream/20 bg-background/90 px-4 backdrop-blur md:px-12">
+          <ul className="mx-auto flex h-full max-w-7xl items-center gap-6 overflow-x-auto font-label text-xs uppercase md:gap-8">
             {sections.map((section) => (
               <li key={section.id} className={`room-${section.id} shrink-0`}>
                 <a href={`#${section.id}`} aria-current={active === section.id ? "true" : undefined}
