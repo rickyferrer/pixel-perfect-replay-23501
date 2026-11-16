@@ -232,6 +232,7 @@ html { scroll-behavior: smooth; }
 .image-shop > div:first-child { overflow: hidden; }
 .image-shop img { transition: transform .45s ease; }
 .gift-frame h3 { transition: color .2s ease; }
+.sponsored-label { display: inline-block; max-width: 100%; padding: 6px 9px 4px; border-radius: 2px; background: var(--room-accent); color: var(--background); font-family: var(--font-label); font-size: 12px; font-weight: 700; line-height: 1.15; text-transform: uppercase; }
 .image-buy { transition: background-color .2s ease, transform .2s ease; }
 @media (hover: hover) and (pointer: fine) {
   .gift-frame:has(.gift-link:hover) h3 { color: var(--room-accent); }

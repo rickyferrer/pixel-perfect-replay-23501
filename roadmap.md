@@ -1,4 +1,5 @@
 # Gift guide update
+- [x] Slightly enlarge product titles and emphasize sponsored selections with an accent badge.
 - [x] Apply uploaded Founders Grotesk fonts to navigation, product titles and CTAs.
 - [x] Move buy CTAs onto photos as pill-shaped buttons and verify desktop/mobile layouts.
 - [x] Remove shopping cues and Locked labels, exclude Al Biernat's, and remove photo letterboxing; verify links and desktop/mobile layouts.
