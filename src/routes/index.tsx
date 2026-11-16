@@ -105,11 +105,11 @@ function ProductBody({ product, purchase = false }: { product: Product; purchase
     {product.sponsored && <p className="mb-1 font-label text-xs uppercase text-room-accent">Sponsored</p>}
     <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
       <h3 className="min-w-0 font-label text-base font-bold leading-snug text-cream wrap-anywhere">{title.charAt(0).toUpperCase() + title.slice(1)}</h3>
-      {purchase && isBuyUrl(product.buyUrl) && <span className="product-buy">Buy at {product.vendor}</span>}
     </div>
     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
       <p className="text-base leading-tight text-cream/80">{product.vendor}<span className="text-room-accent"> · {product.price}</span></p>
     </div>
+    {purchase && isBuyUrl(product.buyUrl) && <div className="mt-2"><span className="product-buy">Buy at {product.vendor}</span></div>}
     {product.note && <p className="mt-2 text-sm italic text-cream/85">{product.note}</p>}
   </div>;
 }

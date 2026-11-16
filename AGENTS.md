@@ -33,4 +33,4 @@ use the editor.
 - Generate public gift exports in the Vite build hook and prerender only the public guide so crawlers receive complete HTML without adding runtime APIs.
 - Use one stretched product link per gift and a separately layered sponsor control so overlays never nest interactive controls or change layout.
 - Load uploaded font faces from asset pointers in the document head so font files remain CDN-managed rather than repository binaries.
-- Shared-photo buy pills sit beside product titles within each stretched product link; single-photo pills remain on images within the gift link to avoid nested anchors.
+- Shared-photo buy pills sit below prices within each stretched product link; single-photo pills remain on images within the gift link to avoid nested anchors.
