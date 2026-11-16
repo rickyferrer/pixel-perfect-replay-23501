@@ -14,6 +14,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { fileURLToPath } from "node:url";
 import { createFeed, structuredData, siteUrl } from "./src/data/gift-seo";
+import { scopeEmbedCss } from "./scripts/scope-embed-css";
 
 function generateGiftExports() {
   writeFileSync("public/gift-guide.json", JSON.stringify(createFeed(), null, 2));
@@ -39,6 +40,8 @@ async function buildEmbed() {
     },
   });
   // Escape non-ASCII so prices and quotes survive host pages that load the script without UTF-8.
+  const css = "public/embed/gift-guide.css";
+  writeFileSync(css, scopeEmbedCss(readFileSync(css, "utf8")));
   const js = "public/embed/gift-guide.js";
   writeFileSync(js, readFileSync(js, "utf8").replace(/[^\x00-\x7f]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, "0")}`));
 }
