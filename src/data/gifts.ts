@@ -1,4 +1,5 @@
 import categories from "./categories.json";
+import { absoluteAssetUrl } from "./asset-urls";
 
 export type SectionId = "elevate" | "using" | "tastemaker" | "littles" | "bonvivant" | "reader" | "host";
 export interface Product {
@@ -30,7 +31,7 @@ export function groupByImage(products: Product[], sectionId: string): ImageGroup
     const key = p.image || `missing-${i}`;
     let group = map.get(key);
     if (!group) {
-      group = { id: `${sectionId}-${map.size}`, image: p.image || "/placeholder.svg", alt: "", products: [] };
+      group = { id: `${sectionId}-${map.size}`, image: absoluteAssetUrl(p.image || "/placeholder.svg"), alt: "", products: [] };
       map.set(key, group);
     }
     group.products.push(p);

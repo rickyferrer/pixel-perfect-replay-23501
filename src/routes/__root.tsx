@@ -11,6 +11,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { absoluteAssetUrl } from "@/data/asset-urls";
 import foundersRegular from "@/assets/founders-grotesk-regular.asset.json";
 import foundersBold from "@/assets/founders-grotesk-bold.asset.json";
 import foundersItalic from "@/assets/founders-grotesk-regular-italic.asset.json";
@@ -22,7 +23,7 @@ const foundersFaces = [
   { asset: foundersBold, weight: 700, style: "normal" },
   { asset: foundersItalic, weight: 400, style: "italic" },
   { asset: foundersBoldItalic, weight: 700, style: "italic" },
-].map(({ asset, weight, style }) => `@font-face { font-family: "Founders Grotesk"; src: url("${asset.url}") format("opentype"); font-weight: ${weight}; font-style: ${style}; font-display: swap; }`).join("\n");
+].map(({ asset, weight, style }) => `@font-face { font-family: "Founders Grotesk"; src: url("${absoluteAssetUrl(asset.url)}") format("opentype"); font-weight: ${weight}; font-style: ${style}; font-display: swap; }`).join("\n");
 
 function NotFoundComponent() {
   return (
@@ -103,9 +104,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Oswald:wght@400;600&display=swap" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: import.meta.env.DEV ? appCss : absoluteAssetUrl(appCss),
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: absoluteAssetUrl("/favicon.ico"), type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
