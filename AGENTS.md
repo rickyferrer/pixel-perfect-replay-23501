@@ -35,3 +35,4 @@ use the editor.
 - Load uploaded font faces from asset pointers in the document head so font files remain CDN-managed rather than repository binaries.
 - Resolve relative public asset URLs through the browser-safe asset URL module for cross-site embedding; keep development CSS local so preview edits remain visible.
 - Shared-photo buy pills sit below prices within each stretched product link; single-photo pills remain on images within the gift link to avoid nested anchors.
+- Use in-memory router history on foreign hosts so the guide renders when its markup is embedded in another site's page.
