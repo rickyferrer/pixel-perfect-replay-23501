@@ -36,3 +36,4 @@ use the editor.
 - Resolve relative public asset URLs through the browser-safe asset URL module for cross-site embedding; keep development CSS local so preview edits remain visible.
 - Shared-photo buy pills sit below prices within each stretched product link; single-photo pills remain on images within the gift link to avoid nested anchors.
 - Use in-memory router history on foreign hosts so the guide renders when its markup is embedded in another site's page.
+- Ship a router-free embed bundle (public/embed, built in the Vite build hook from src/embed.tsx) for pasting into other sites, because hydrating the full app inside a foreign page fails.
