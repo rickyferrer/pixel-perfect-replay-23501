@@ -100,7 +100,7 @@ function Index() {
 }
 
 function ProductBody({ product }: { product: Product }) {
-  const title = product.name.trim().replace(/\b[a-z][\w’'-]*/g, (word) => /^(a|an|and|at|by|for|in|of|on|or|the|to|with)$/i.test(word) ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1));
+  const title = product.name.trim().replace(/\b[a-z][\w’'-]*/gi, (word) => /^(a|an|and|at|by|for|in|of|on|or|the|to|with)$/i.test(word) ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1)).replace(/(['’])S\b/g, "$1s");
   return <div>
     {product.sponsored && <p className="mb-1 font-label text-xs uppercase text-room-accent">Sponsored</p>}
     <h3 className="font-label text-base font-bold leading-snug text-cream wrap-anywhere">{title.charAt(0).toUpperCase() + title.slice(1)}</h3>
