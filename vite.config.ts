@@ -8,7 +8,7 @@
 // hosting already compresses at the edge.
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { build } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
@@ -38,6 +38,9 @@ async function buildEmbed() {
       lib: { entry: "src/embed.tsx", formats: ["iife"], name: "GiftGuideEmbed", fileName: () => "gift-guide.js", cssFileName: "gift-guide" },
     },
   });
+  // Escape non-ASCII so prices and quotes survive host pages that load the script without UTF-8.
+  const js = "public/embed/gift-guide.js";
+  writeFileSync(js, readFileSync(js, "utf8").replace(/[^\x00-\x7f]/g, (c) => `\\u${c.charCodeAt(0).toString(16).padStart(4, "0")}`));
 }
 
 export default defineConfig({
