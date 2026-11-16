@@ -25,9 +25,9 @@ function generateGiftExports() {
 // Builds the router-free WordPress embed (public/embed/gift-guide.js + .css) once per production build.
 let embedBuilt = false;
 async function buildEmbed() {
-  if (embedBuilt || process.env.GIFT_EMBED_CHILD) return;
+  if (embedBuilt || process.env["GIFT_EMBED_CHILD"]) return;
   embedBuilt = true;
-  process.env.GIFT_EMBED_CHILD = "1";
+  process.env["GIFT_EMBED_CHILD"] = "1";
   await build({
     configFile: false,
     plugins: [react(), tailwindcss()],
@@ -41,7 +41,7 @@ async function buildEmbed() {
 }
 
 export default defineConfig({
-  vite: { plugins: [{ name: "gift-guide-exports", async buildStart() { generateGiftExports(); if (this.environment?.config.command === "build" || process.env.NODE_ENV === "production") await buildEmbed(); } }] },
+  vite: { plugins: [{ name: "gift-guide-exports", async buildStart() { generateGiftExports(); if (this.environment?.config.command === "build" || process.env["NODE_ENV"] === "production") await buildEmbed(); } }] },
   tanstackStart: {
     pages: [{ path: "/" }],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
