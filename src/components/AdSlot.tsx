@@ -6,10 +6,10 @@ export const AD_UNIT = "/23334079222/MissEllie_horizontal";
 type GoogleTag = { cmd: Array<() => void>; pubads: () => any; enableServices: () => void; defineSlot: (u: string, s: number[], id: string) => any; display: (id: string) => void; destroySlots: (s: any[]) => void };
 declare global { interface Window { googletag?: GoogleTag } }
 
-// Loads GPT once, from the component, so it works on the guide site and in the WordPress embed.
+// Reuses the host page's GPT (standard or limited-ads domain) when present; otherwise loads it once, from the component, so it works on the guide site and in the WordPress embed.
 function loadGpt(): GoogleTag {
   const gt = (window.googletag = window.googletag || { cmd: [] } as unknown as GoogleTag);
-  if (!document.querySelector('script[src*="securepubads.g.doubleclick.net/tag/js/gpt.js"]')) {
+  if (!document.querySelector('script[src*="/tag/js/gpt.js"]')) {
     const s = document.createElement("script");
     s.async = true;
     s.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
@@ -17,7 +17,7 @@ function loadGpt(): GoogleTag {
   }
   if (!(window as any).__giftGuideGptReady) {
     (window as any).__giftGuideGptReady = true;
-    gt.cmd.push(() => { gt.pubads().collapseEmptyDivs(); gt.enableServices(); });
+    gt.cmd.push(() => { const g = gt as any; if (typeof g.setConfig === "function") g.setConfig({ collapseDiv: "ON_NO_FILL" }); else gt.pubads().collapseEmptyDivs(); gt.enableServices(); });
   }
   return gt;
 }
