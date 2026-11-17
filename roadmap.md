@@ -7,3 +7,4 @@
 - [x] Implement linked gifts, fixed-size sponsored overlays, and alternating Host rows.
 - [x] Generate structured data, public feed, and crawler files; configure static prerendering. Initial server HTML verified; published static output awaits publishing.
 - [x] Verify desktop, mobile, sponsor controls, exports, and 10 tests; deliver JSON-LD.- [ ] Support WordPress CSS Link / Javascript Link fields (script may load in the head before the guide's spot exists).
+- [x] Add GAM ad slots between sections (970x250 MissEllie_horizontal).

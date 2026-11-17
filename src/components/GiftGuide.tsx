@@ -2,6 +2,8 @@ import { createContext, useContext, useEffect, useRef, useState, type ReactNode 
 import { Button } from "@/components/ui/button";
 import { sections, type ImageGroup, type Product, type Section } from "@/data/gifts";
 import { isBuyUrl } from "@/data/gift-seo";
+import { AdSlot } from "@/components/AdSlot";
+import { Fragment } from "react";
 
 function useReveal() {
   useEffect(() => {
@@ -73,7 +75,7 @@ export function GiftGuide() {
             ))}
           </ul>
         </nav>
-        <main>{sections.map((section) => <GiftSection key={section.id} section={section} />)}</main>
+        <main>{sections.map((section, i) => <Fragment key={section.id}><GiftSection section={section} />{i < sections.length - 1 && <AdSlot id={`gift-guide-ad-${i + 1}`} />}</Fragment>)}</main>
         <footer className="px-4 py-8 text-center text-lg italic text-cream/80 md:px-12">Photography by Elizabeth Lavin; styling by Adam Fortner and Jamie Laubhan-Oliver.</footer>
       </div>
     </SponsorContext.Provider>
