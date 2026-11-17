@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-// D Magazine GAM network; same horizontal unit as the Recording Artists page.
-export const AD_UNIT = "/23334079222/MissEllie_horizontal";
+// D Magazine GAM network; matches the host page's network.
+export const AD_UNIT = "/23367196308/MissEllie_horizontal";
 
 type GoogleTag = { cmd: Array<() => void>; pubads: () => any; enableServices: () => void; defineSlot: (u: string, s: number[], id: string) => any; display: (id: string) => void; destroySlots: (s: any[]) => void };
 declare global { interface Window { googletag?: GoogleTag } }
