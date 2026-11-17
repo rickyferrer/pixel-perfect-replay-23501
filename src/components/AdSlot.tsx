@@ -3,12 +3,12 @@ import { useEffect } from "react";
 // D Magazine GAM network; same horizontal unit as the Recording Artists page.
 export const AD_UNIT = "/23334079222/MissEllie_horizontal";
 
-type GoogleTag = { cmd: Array<() => void>; [key: string]: any };
+type GoogleTag = { cmd: Array<() => void>; pubads: () => any; enableServices: () => void; defineSlot: (u: string, s: number[], id: string) => any; display: (id: string) => void; destroySlots: (s: any[]) => void };
 declare global { interface Window { googletag?: GoogleTag } }
 
 // Loads GPT once, from the component, so it works on the guide site and in the WordPress embed.
 function loadGpt(): GoogleTag {
-  const gt = (window.googletag = window.googletag || { cmd: [] });
+  const gt = (window.googletag = window.googletag || { cmd: [] } as unknown as GoogleTag);
   if (!document.querySelector('script[src*="securepubads.g.doubleclick.net/tag/js/gpt.js"]')) {
     const s = document.createElement("script");
     s.async = true;
