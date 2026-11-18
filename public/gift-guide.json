@@ -694,6 +694,23 @@
               "priceNumber": 200
             }
           ]
+        },
+        {
+          "id": "reader-4",
+          "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/10/Mahj-Magazine-New-York-DMag-November-2026.webp",
+          "alt": "Membership to Mähj the Magazine",
+          "products": [
+            {
+              "name": "Membership to Mähj the Magazine",
+              "vendor": "Mähj",
+              "price": "$150 a year",
+              "buyUrl": "https://mahj.com/products/mahj-membership",
+              "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/10/Mahj-Magazine-New-York-DMag-November-2026.webp",
+              "sponsored": false,
+              "sponsorBlurb": "",
+              "priceNumber": 150
+            }
+          ]
         }
       ],
       "layout": "grid"

@@ -869,7 +869,7 @@
       "@type": "ItemList",
       "name": "The Avid Reader",
       "description": "Handsome additions to the bookshelf",
-      "numberOfItems": 4,
+      "numberOfItems": 5,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -951,6 +951,27 @@
               "seller": {
                 "@type": "Organization",
                 "name": "Bird's Bookstore"
+              }
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "Membership to Mähj the Magazine",
+            "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/10/Mahj-Magazine-New-York-DMag-November-2026.webp",
+            "url": "https://mahj.com/products/mahj-membership",
+            "description": "$150 a year",
+            "offers": {
+              "@type": "Offer",
+              "price": 150,
+              "priceCurrency": "USD",
+              "url": "https://mahj.com/products/mahj-membership",
+              "seller": {
+                "@type": "Organization",
+                "name": "Mähj"
               }
             }
           }

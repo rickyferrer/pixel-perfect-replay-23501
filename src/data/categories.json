@@ -395,6 +395,15 @@
         "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/frequent-flyer-birds-bookstore-scaled.webp",
         "sponsored": false,
         "sponsorBlurb": ""
+      },
+      {
+        "name": "Membership to Mähj the Magazine",
+        "vendor": "Mähj",
+        "price": "$150 a year",
+        "buyUrl": "https://mahj.com/products/mahj-membership",
+        "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/10/Mahj-Magazine-New-York-DMag-November-2026.webp",
+        "sponsored": false,
+        "sponsorBlurb": ""
       }
     ]
   },
