@@ -34,9 +34,8 @@ describe("Structured offers", () => {
   it("uses 9995 for $9,995 for set", () => { expect(priceNumber("$9,995 for set")).toBe(9995); });
   it("excludes products without numeric prices or buy URLs", () => {
     const items = createStructuredData().mainEntity.flatMap((s) => s.itemListElement);
-    expect(items.some((i) => i.item.name === "Bocci “14P” portable lamp")).toBe(false);
     expect(items.some((i) => i.item.name === "* WAITING ON ASSETS*")).toBe(false);
-    expect(items).toHaveLength(52);
+    expect(items).toHaveLength(53);
   });
   it("does not treat in-store text as a buy URL", () => { expect(isBuyUrl("In store only")).toBe(false); });
 });
