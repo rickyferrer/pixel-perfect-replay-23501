@@ -4,11 +4,11 @@ import { createStructuredData, priceNumber, isBuyUrl } from "@/data/gift-seo";
 
 describe("Clean by category data", () => {
   it("preserves the selected rows and excludes Al Biernat's", () => {
-    expect(sections.map((s) => s.groups.reduce((n, g) => n + g.products.length, 0))).toEqual([7, 6, 6, 6, 12, 5, 10]);
+    expect(sections.map((s) => s.groups.reduce((n, g) => n + g.products.length, 0))).toEqual([7, 6, 6, 7, 12, 6, 10]);
     expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).some((p) => p.vendor.trim() === "Al Biernat's")).toBe(false);
   });
   it("uses the four sponsored selections in the sheet", () => {
-    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "The Do Cut & Color", "Canyon Ranch Wellness ", "Uncle Julio's "]);
+    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "The Do Cut & Color", "Canyon Ranch Wellness ", "Netflix House", "Uncle Julio's "]);
   });
   it("preserves supplied names, vendors and price wording", () => {
     const products = sections.flatMap((s) => s.groups.flatMap((g) => g.products));
@@ -36,7 +36,7 @@ describe("Structured offers", () => {
     const items = createStructuredData().mainEntity.flatMap((s) => s.itemListElement);
     expect(items.some((i) => i.item.name === "Bocci “14P” portable lamp")).toBe(false);
     expect(items.some((i) => i.item.name === "* WAITING ON ASSETS*")).toBe(false);
-    expect(items).toHaveLength(51);
+    expect(items).toHaveLength(52);
   });
   it("does not treat in-store text as a buy URL", () => { expect(isBuyUrl("In store only")).toBe(false); });
 });

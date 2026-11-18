@@ -468,7 +468,7 @@
       "@type": "ItemList",
       "name": "Little Luxuries for Little Humans",
       "description": "Small treasures for the youngest on your list",
-      "numberOfItems": 6,
+      "numberOfItems": 7,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -592,6 +592,27 @@
               "seller": {
                 "@type": "Organization",
                 "name": "Interabang "
+              }
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "Netflix House Experience",
+            "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/NetflixKPop_PostShow_0517AP2024.webp",
+            "url": "https://www.netflix.com/house/dallas/tickets",
+            "description": "$89+. Find something for every fan on your list at Netflix House Dallas! Shop your favorite Netflix stories with holiday-inspired sweatshirts, ornaments, stockings, and advent calendars. Netflix House is also the one-stop shop for all things KPop Demon Hunters, including apparel, Pop Mart collectibles, LEGO sets, Mattel dolls, Hasbro NERF role play and more. Or give the ultimate gift with tickets to the all-new KPop Demon Hunters experience, now open daily at Netflix House Dallas.",
+            "offers": {
+              "@type": "Offer",
+              "price": 89,
+              "priceCurrency": "USD",
+              "url": "https://www.netflix.com/house/dallas/tickets",
+              "seller": {
+                "@type": "Organization",
+                "name": "Netflix House"
               }
             }
           }
@@ -961,7 +982,7 @@
           "item": {
             "@type": "Product",
             "name": "Membership to Mähj the Magazine",
-            "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/10/Mahj-Magazine-New-York-DMag-November-2026.webp",
+            "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/RK-edit-Large.webp",
             "url": "https://mahj.com/products/mahj-membership",
             "description": "$150 a year",
             "offers": {

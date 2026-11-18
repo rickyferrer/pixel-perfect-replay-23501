@@ -241,6 +241,15 @@
         "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/interabang-subscription.webp",
         "sponsored": false,
         "sponsorBlurb": ""
+      },
+      {
+        "name": "Netflix House Experience",
+        "vendor": "Netflix House",
+        "price": "$89+",
+        "buyUrl": "https://www.netflix.com/house/dallas/tickets",
+        "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/NetflixKPop_PostShow_0517AP2024.webp",
+        "sponsored": true,
+        "sponsorBlurb": "Find something for every fan on your list at Netflix House Dallas! Shop your favorite Netflix stories with holiday-inspired sweatshirts, ornaments, stockings, and advent calendars. Netflix House is also the one-stop shop for all things KPop Demon Hunters, including apparel, Pop Mart collectibles, LEGO sets, Mattel dolls, Hasbro NERF role play and more. Or give the ultimate gift with tickets to the all-new KPop Demon Hunters experience, now open daily at Netflix House Dallas."
       }
     ]
   },
@@ -401,7 +410,7 @@
         "vendor": "Mähj",
         "price": "$150 a year",
         "buyUrl": "https://mahj.com/products/mahj-membership",
-        "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/10/Mahj-Magazine-New-York-DMag-November-2026.webp",
+        "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/RK-edit-Large.webp",
         "sponsored": false,
         "sponsorBlurb": ""
       }
