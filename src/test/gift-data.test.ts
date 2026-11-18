@@ -4,11 +4,11 @@ import { createStructuredData, priceNumber, isBuyUrl } from "@/data/gift-seo";
 
 describe("Clean by category data", () => {
   it("preserves the selected rows and excludes Al Biernat's", () => {
-    expect(sections.map((s) => s.groups.reduce((n, g) => n + g.products.length, 0))).toEqual([7, 6, 6, 7, 12, 6, 10]);
+    expect(sections.map((s) => s.groups.reduce((n, g) => n + g.products.length, 0))).toEqual([7, 6, 6, 7, 12, 5, 10]);
     expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).some((p) => p.vendor.trim() === "Al Biernat's")).toBe(false);
   });
-  it("uses the four sponsored selections in the sheet", () => {
-    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "The Do Cut & Color", "Canyon Ranch Wellness ", "Netflix House", "Uncle Julio's "]);
+  it("uses the five sponsored selections in the sheet", () => {
+    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "The Do Cut & Color", "Canyon Ranch Wellness ", "Uncle Julio's ", "Netflix House"]);
   });
   it("preserves supplied names, vendors and price wording", () => {
     const products = sections.flatMap((s) => s.groups.flatMap((g) => g.products));
