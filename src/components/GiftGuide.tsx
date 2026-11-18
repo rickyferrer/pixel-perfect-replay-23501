@@ -83,7 +83,7 @@ export function GiftGuide() {
 }
 
 function ProductBody({ product, purchase = false }: { product: Product; purchase?: boolean }) {
-  const title = product.name.trim().replace(/\b[a-z][\w’'-]*/gi, (word) => /^(a|an|and|at|by|for|in|of|on|or|the|to|with)$/i.test(word) ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1)).replace(/(['’])S\b/g, "$1s");
+  const title = product.name.trim().replace(/[\p{L}\p{N}][\p{L}\p{N}’'-]*/gu, (word) => /^(a|an|and|at|by|for|in|of|on|or|the|to|with)$/i.test(word) ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1)).replace(/(['’])S\b/g, "$1s");
   return <div>
     {product.sponsored && <p className="sponsored-label mb-2">Sponsored</p>}
     <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
