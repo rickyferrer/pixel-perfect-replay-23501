@@ -123,6 +123,15 @@
         "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Uncle-Julios.webp",
         "sponsored": true,
         "sponsorBlurb": "Give the gift of bold flavors and unforgettable moments at Uncle Julio’s! Purchase a $50 gift card and receive $15 off your next visit. Whether you're craving sizzling fajitas, fresh-made favorites, or a night out with friends, there's something delicious waiting. Offer valid January 1–March 1, 2027."
+      },
+      {
+        "name": "Stargazer Laundry Soap Plus",
+        "vendor": "Buff City Soap",
+        "price": "$22",
+        "buyUrl": "https://buffcitysoap.com/collections/laundry-soap-plus",
+        "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Laundry-Soap-Plus_Stargazer.webp",
+        "sponsored": true,
+        "sponsorBlurb": ""
       }
     ]
   },
