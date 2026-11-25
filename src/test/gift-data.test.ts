@@ -8,7 +8,7 @@ describe("Clean by category data", () => {
     expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).some((p) => p.vendor.trim() === "Al Biernat's")).toBe(false);
   });
   it("uses the five sponsored selections in the sheet", () => {
-    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "Buff City Soap", "The Do Cut and Color", "Canyon Ranch Wellness ", "Uncle Julio's ", "Netflix House"]);
+    expect(sections.flatMap((s) => s.groups.flatMap((g) => g.products)).filter((p) => p.sponsored).map((p) => p.vendor)).toEqual(["Sunsoak", "The Do Cut and Color", "Canyon Ranch Wellness ", "Uncle Julio's ", "Buff City Soap", "Netflix House"]);
   });
   it("preserves supplied names, vendors and price wording", () => {
     const products = sections.flatMap((s) => s.groups.flatMap((g) => g.products));
