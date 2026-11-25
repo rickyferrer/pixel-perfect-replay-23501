@@ -172,7 +172,7 @@
       "@type": "ItemList",
       "name": "Gifts Worth Using",
       "description": "Utilitarian essentials, beautifully reimagined",
-      "numberOfItems": 6,
+      "numberOfItems": 7,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -308,6 +308,27 @@
               "seller": {
                 "@type": "Organization",
                 "name": "Uncle Julio's "
+              }
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "Stargazer Laundry Soap Plus",
+            "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Laundry-Soap-Plus_Stargazer.webp",
+            "url": "https://buffcitysoap.com/collections/laundry-soap-plus",
+            "description": "$22",
+            "offers": {
+              "@type": "Offer",
+              "price": 22,
+              "priceCurrency": "USD",
+              "url": "https://buffcitysoap.com/collections/laundry-soap-plus",
+              "seller": {
+                "@type": "Organization",
+                "name": "Buff City Soap"
               }
             }
           }

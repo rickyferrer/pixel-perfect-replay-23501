@@ -125,6 +125,15 @@
         "sponsorBlurb": "Give the gift of bold flavors and unforgettable moments at Uncle Julio’s! Purchase a $50 gift card and receive $15 off your next visit. Whether you're craving sizzling fajitas, fresh-made favorites, or a night out with friends, there's something delicious waiting. Offer valid January 1–March 1, 2027."
       },
       {
+        "name": "Gift Card ",
+        "vendor": "Al Biernat's ",
+        "price": "$250",
+        "buyUrl": "https://www.albiernats.com/extended-shop/",
+        "image": "https://assets.dmagstatic.com/wp-content/uploads/2026/11/Al-Biernats-Gift-Guide-Photo-.webp",
+        "sponsored": true,
+        "sponsorBlurb": "Treat the food lover on your list to a gift worth savoring! For every $250 in Al Biernat’s gift cards you purchase, you’ll receive a 10% bonus gift card to enjoy in 2027. Share an unforgettable dining experience this holiday season! Gratuity not included and in-store purchases only."
+      },
+      {
         "name": "Stargazer Laundry Soap Plus",
         "vendor": "Buff City Soap",
         "price": "$22",
